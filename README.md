@@ -1,3 +1,3 @@
-# READ ME
+# README
 
 # Curso de Genómica Computacional, Facultad de Ciencias - UNAM. 
