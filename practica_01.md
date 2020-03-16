@@ -47,7 +47,7 @@ echo "Después de la Parte I. necesito 1/2 minuto de descanso, que son exactamen
 < AQUÍ VA EL COMANDO QUE PERMITE DORMIR POR 30 SEGUNDOS >
 echo "Ahora sí, con todo!"
 ```
-04. Imagina que en lugar de poner 30, escribiste 300. Hazlo y ejecutalo en *background*. Como no queremos esperar 5 minutos, *mata* el proceso utilizando su PID.   
+04. ^Imagina que en lugar de poner 30, escribiste 300. Hazlo y ejecutalo en *background*. Como no queremos esperar 5 minutos, *mata* el proceso utilizando su PID.   
 
 ## Parte III. __ / 20
  
