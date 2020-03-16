@@ -1,2 +1,3 @@
-# genomica_2020-2
-Genómica Computacional, Facultad de Ciencias - UNAM. 
+# READ ME
+
+# Curso de Genómica Computacional, Facultad de Ciencias - UNAM. 
