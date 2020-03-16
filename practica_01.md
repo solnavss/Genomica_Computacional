@@ -25,9 +25,29 @@ Respuesta 4: La organización...
 01. ^Indica qué tipo de shell tiene tu computadora. Si no recuerdas el comando, visita el siguiente sitio: [AskUbuntu](https://askubuntu.com/questions/590899/how-do-i-check-which-shell-i-am-using01).
 02. ^Dentro del directorio que creaste con tu inicial y apellido, crea en una sola linea los siguientes directorios para la organización de tu proyecto bioinformático: `data/`, `filtered/`, `/raw_data`, `meta/`, `scripts/`, `figures/` y `archive/`. 
 03. ^Mueve los archivos necesarios para obtener la siguiente esctructura: `data/filtered` y `data/raw_data`
-04. Visita el siguiente repositorio y contesta ¿A qué se debe el nombre y la organización de los directorios que acabamos de crear? [BioinfinvRepo](https://github.com/u-genoma/BioinfinvRepro/blob/master/Unidad2/Unidad2_Organizacion_proyecto_bioinf.md)
+04. ^Visita el siguiente repositorio y contesta ¿A qué se debe el nombre y la organización de los directorios que acabamos de crear? [BioinfinvRepo](https://github.com/u-genoma/BioinfinvRepro/blob/master/Unidad2/Unidad2_Organizacion_proyecto_bioinf.md)
 
 ## Parte II. __ / 20
+
+Entra al directorio `scripts/`, crea un archivo de texto `delay.sh` y abrelo con un editor en la terminal para escribir las siguientes líneas de código: **Nota:** Antes de continuar, escribe lo siguiente `which bash`, si obtuviste `/bin/bash` continúa. De lo contrario, modifica la primer línea con lo que se imprimió `#!<ubicación_bash>`. Como notaste, los caracteres `#!` antes de la ubicación del programa bash, son indispensables, a estos se les conoce como [shebang](https://es.wikipedia.org/wiki/Shebang).
+
+```
+#!/bin/bash
+echo "Después de la Parte I. necesito 1/2 minuto de descanso, que son exactamente 30 segundos."
+
+echo "Ahora sí, con todo!"
+```
+01. ^Deseas ejecutar el script, por lo que tienes que darle al menos al usuario permisos de ejecución.
+02. ^Verifica los permismos de `delay.sh`. Una vez que te aseguraste de que tiene permiso de ejecución, escribe lo siguiente `./delay.sh`.
+03. ^Quieres que después de la segunda línea, haya una pausa de 30 segundos. Ya conoces el comando que permite *dormir* un proceso, si no recuerdas la unidad de tiempo que maneja, visita su manual `man <comando>`. Edita el archivo nuevamente insertanto el comando como se indica abajo. Observa lo que sucede y repórtalo junto con los comandos que usaste.
+
+```
+#!/bin/bash
+echo "Después de la Parte I. necesito 1/2 minuto de descanso, que son exactamente 30 segundos."
+< AQUÍ VA EL COMANDO QUE PERMITE DORMIR POR 30 SEGUNDOS >
+echo "Ahora sí, con todo!"
+```
+04. Imagina que en lugar de poner 30, escribiste 300. Hazlo y ejecutalo en *background*. Como no queremos esperar 5 minutos, *mata* el proceso utilizando su PID.   
 
 ## Parte III. __ / 20
  
