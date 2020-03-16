@@ -1,0 +1,165 @@
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
+                                  Parte 1
+
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Permisos
+-----------------------------------------------------------------------------
+- ls -l
+- chmod 005 usuario_ejercicio.txt
+- ls -l
+- chmod u+r usuario_ejercicio.txt
+- ls -l
+- chmod u+w usuario_ejercicio.txt
+- ls -l
+- chmod u+x usuario_ejercicio.txt
+- ls -l
+- chmod g+r usuario_ejercicio.txt
+- ls -l
+- chmod g-w usuario_ejercicio.txt
+- ls -l
+- chmod g+x usuario_ejercicio.txt
+- ls -l
+- chmod o+r usuario_ejercicio.txt
+- ls -l
+- chmod o-w usuario_ejercicio.txt
+- ls -l
+- chmod o+x usuario_ejercicio.txt
+- ls -l
+-----------------------------------------------------------------------------
+Modificación de archivos NANO
+-----------------------------------------------------------------------------
+- nano ejercicio_01/archivo_01.txt
+(Escribir las siguientes lineas en el archivo)
+
+Mi gato azul come croquetas
+Mi perro verde corre rapido
+Mi casa morada es morada
+^X (Guarda tu archivo)
+
+- nano clase_01/archivo_02.txt
+(Escribir las siguientes lineas en el archivo)
+
+Mi ave azul vuela
+Mi carro verde corre rapido
+Ese oso es rojo
+^O  (Guarda tu archivo sin cerrarlo)
+
+- Ejecuta los siguientes comandos sobre archivo_01.txt
+^G  ¿qué pasa?
+^W  busca la palabra: perro
+^C  ¿Qué información obtenemos?
+^R  pidele que llame al archivo: archivo_02.txt
+
+- Guarda tu archivo y cierralo
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
+                                  Parte 2
+
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Inspección de archivos
+-----------------------------------------------------------------------------
+- head archivo_01.txt
+
+- head -n 1 archivo_01.txt
+
+- tail archivo_01.txt
+
+- tail -n 1 archivo_00.txt
+
+- more ejercicio_01/archivo_01.txt
+
+- less ejercicio_01/archivo_01.txt
+
+- cat ejercicio_01/archivo_01.txt
+-----------------------------------------------------------------------------
+Filtros grep
+-----------------------------------------------------------------------------
+- grep Fis genes_coli.txt
+- grep -v Fis genes_coli.txt
+- grep -n Fis genes_coli.txt t
+- grep  --colour Fis genes_coli.txt
+- grep  -n --colour genes_coli.txt
+- grep  Fis -n --colour genes_coli.txt
+-----------------------------------------------------------------------------
+Filtros sort
+-----------------------------------------------------------------------------
+- sort genes_coli.txt
+- sort -n genes_coli.txt
+- sort -r genes_coli.txt
+- sort -k1 genes_coli.txt
+- sort -k1 -r genes_coli.txt
+- sort -k2  genes_coli.txt
+-----------------------------------------------------------------------------
+Filtros cut
+-----------------------------------------------------------------------------
+- cut -f1 genes_coli.txt
+- cut -b1-10 genes_coli.txt
+- cut -b3 genes_coli.txt
+- cut -c3 genes_coli.txt
+-----------------------------------------------------------------------------
+Filtros uniq
+-----------------------------------------------------------------------------
+uniq genes_coli.txt
+uniq -c genes_coli.txt
+uniq -d genes_coli.txt
+uniq -u genes_coli.txt
+-----------------------------------------------------------------------------
+Redireccionamiento de archivos
+-----------------------------------------------------------------------------
+ls -la > mi_listas.txt  (escribe y sobreescribe)
+ls -la >> mi_listas.txt (agrega)
+-----------------------------------------------------------------------------
+Filtros cat
+-----------------------------------------------------------------------------
+- cat archivo_02.txt
+- cat -b archivo_02.txt
+- cat -n archivo_02.txt
+- cat -e archivo_02.txt
+- cat archivo_01.txt > archivo_02.txt
+
+- nano archivo_03.txt
+
+Escribe en el archivo
+
+Hola como estan!!
+
+Guarda tu archivo
+- cat  archivo_02.txt >> archivo_03.txt
+-----------------------------------------------------------------------------
+Fitros wc
+-----------------------------------------------------------------------------
+- wc *
+- wc genes_coli.txt
+
+- wc -l genes_coli.txt
+- wc -c genes_coli.txt
+- wc -w genes_coli.txt
+-----------------------------------------------------------------------------
+Tuberias (pipes)
+-----------------------------------------------------------------------------
+grep Fis genes_coli.txt
+grep Fis genes_coli.txt |sort -k4
+grep Fis genes_coli.txt |sort -k4 |cut -f4
+grep Fis genes_coli.txt |sort -k4 |cut -f4 | sort | uniq -c
+grep Fis genes_coli.txt |sort -k4 |cut -f4 | sort | uniq -c
+grep Fis genes_coli.txt |sort -k4 |cut -f4 | sort | uniq -c > \
+frecuencias_evidencia_fis.txt
+-----------------------------------------------------------------------------
+awk
+-----------------------------------------------------------------------------
+touch alumnos_gc.txt && nano alumnos_gc.txt
+
+nombre  apellido    carrera area_bioinfo
+marisol navarro biología metagenómica
+...
+awk '{print}' alumnos_gc.txt
+awk '/biologia/ {print}' alumnos_gc.txt
+awk '{print $1,$2}' alumnos_gc.txt
+awk '{print NR,$0}' alumnos_gc.txt
+awk '{print $1,$NF}' alumnos_gc.txt
+awk 'NR==1, NR==3 {print NR,$0}' alumnos_gc.txt
