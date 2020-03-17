@@ -50,6 +50,11 @@ echo "Ahora sí, con todo!"
 04. ^Imagina que en lugar de poner 30, escribiste 300. Hazlo y ejecutalo en *background*. Como no queremos esperar 5 minutos, *mata* el proceso utilizando su PID.   
 
 ## Parte III. __ / 20
+
+En esta parte, trabajarán con secuencias genómicas del Covid-19 (coronavirus), el cuál actualmente (17.03.20) es considerado pandemia. Para tener contexto de los datos, a continuación les anexo un video sobre la [estructura molecular del Covid-19](https://www.youtube.com/watch?v=I0AbpnFP1g8). Deberán elaborar un resumen de máximo 120 palabras y anexar al archivo `comandos.txt`. 
+
+También deberán seguir las siguientes instrucciónes:
+
  
 ## Parte IV. __ / 20
 
