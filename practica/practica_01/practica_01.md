@@ -1,7 +1,7 @@
 # Genómica Computacional: Grupo 7075, Semestre 2020-2
 ## Práctica 01 - Herramientas bioinformáticas I (Entrega: 23.03.20/23:59)
 
-**Indicaciones:** La práctica esta compuesta de cinco partes con ejercicios para repasar los comandos de bash que se vieron en clase, también el manejo de secuencias y algunos formatos particulares (`.faa`, `.fna` y `.fastqc`). Deberán resolver **individualmente** los ejercicios conforme se indique y anotar los comandos que se piden en un archivo `.txt`. Es responsabilidad del alumno subir el directorio correspondiente a su cuenta de [git](https://git-scm.com/) **(Parte IV)** y corroborar que se encuentre toda la información que se le pidió. Así mismo, tendrán que enviar vía [Google Classroom](https://classroom.google.com/) la liga a su cuenta de `git` antes de que cierre la asignación **(23.03.20/23:59)**. **Nota:** Si existen dudas al respecto de la práctica, favor de escribir a mi correo. Estaré respondiendo dudas a más tardar el lunes 23.03.20 a las 11:59.
+**Indicaciones:** La práctica esta compuesta de cinco partes con ejercicios para repasar los comandos de bash que se vieron en clase, también el manejo de secuencias y algunos formatos particulares (`.faa`, `.fna` y `.fastqc`). Deberán resolver de manera **individual** los ejercicios conforme se indique y anotar los comandos que se piden en un archivo `.txt`. Es responsabilidad del alumno subir el directorio correspondiente a su cuenta de [git](https://git-scm.com/) **(Parte IV)** y corroborar que se encuentre toda la información que se le pidió. Así mismo, tendrán que enviar vía [Google Classroom](https://classroom.google.com/) la liga a su cuenta de `git` antes de que cierre la asignación **(23.03.20/23:59)**. **Nota:** Si existen dudas al respecto de la práctica, favor de escribir a mi correo. Estaré respondiendo dudas a más tardar el lunes 23.03.20 a las 11:59.
 ***
 
 ## Parte I. __ / 20
@@ -51,11 +51,36 @@ echo "Ahora sí, con todo!"
 
 ## Parte III. __ / 20
 
-En esta parte, trabajarán con secuencias genómicas del Covid-19 (coronavirus), el cuál actualmente (17.03.20) es considerado pandemia. Para tener contexto de los datos, a continuación les anexo un video sobre la [estructura molecular del Covid-19](https://www.youtube.com/watch?v=I0AbpnFP1g8). Deberán elaborar un resumen de máximo 120 palabras y anexar al archivo `comandos.txt`. 
+01. ^En esta parte, trabajarán con secuencias genómicas del Covid-19 (coronavirus), el cuál actualmente (17.03.20) es considerado pandemia. Para tener contexto de los datos, a continuación les anexo un video sobre la [estructura molecular del Covid-19](https://www.youtube.com/watch?v=I0AbpnFP1g8). Deberán elaborar un resumen de máximo 120 palabras y anexar al archivo `comandos.txt`. 
 
-También deberán seguir las siguientes instrucciónes:
+02. ^Seguir las siguientes indicaciones:
+***
+*Entrar a este vínculo de [NCBI](https://www.ncbi.nlm.nih.gov/genbank/sars-cov-2-seqs/) (National Institute of Health) sobre el Covid-19. Seguir los pasos para obtener los archivos:`sequence.fasta` y `sequence.gff3`.*
 
- 
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_01.jpg)
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_02.jpg)
+***
+*Estando en el vínculo de RefSeq, sigue los pasos para obtener los archivos:`sequence_1.faa`,`sequence_2.faa` y `sequence_3.faa`.**Nota:** Es sumamente importante descargar los 3 archivos **individualmente**. Si los archivos se van a las `Descargas/`, seguramente se les asignará un nombre como `sequence (1).fasta`, el cual para efectos prácticos deberás cambiar a `sequence_1.faa` para cada archivo. Además para esta parte, es necesario que describas -en el archivo `comandos.txt`- a grandes rasgos cuál es la función de la [SARS-CoV-2 spike ectodomain structure](https://www.annualreviews.org/doi/abs/10.1146/annurev-virology-110615-042301).*
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_03.jpg)
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_04.jpg)
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_05.jpg)
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_06.jpg)
+***
+*Una vez obtenidos los archivos anteriores, deberas regresar al vínculo de NCBI inicial y seguir los pasos para obtener los archivos:`sra_data.fasta.gz` y `sra_data.fastq.gz`.
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_07.jpg)
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_08.jpg)
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_09.jpg)
+***
+03. ^Finalmente, deberás mover los archivos `sequence.fasta`, `sequence.gff3`, `sequence_1.faa`, `sequence_2.faa`, `sequence_3.faa`,  `sra_data.fasta.gz` y `sra_data.fastq.gz` al directorio `raw_data/` **(Ej. ~/Desktop/genomica_2020-2/mnavarro_p01/data/raw_data/)**
+
 ## Parte IV. __ / 20
 
 ## Parte V. __ / 20
