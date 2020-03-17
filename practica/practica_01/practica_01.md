@@ -61,7 +61,7 @@ echo "Ahora sí, con todo!"
 
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_02.jpg)
 ***
-*Estando en el vínculo de RefSeq, sigue los pasos para obtener los archivos:`sequence_1.faa`,`sequence_2.faa` y `sequence_3.faa`.**Nota:** Es sumamente importante descargar los 3 archivos **individualmente**. Si los archivos se van a las `Descargas/`, seguramente se les asignará un nombre como `sequence (1).fasta`, el cual para efectos prácticos deberás cambiar a `sequence_1.faa` para cada archivo. Además para esta parte, es necesario que describas -en el archivo `comandos.txt`- a grandes rasgos cuál es la función de la [SARS-CoV-2 spike ectodomain structure](https://www.annualreviews.org/doi/abs/10.1146/annurev-virology-110615-042301).*
+*Estando en el vínculo de RefSeq, sigue los pasos para obtener los archivos:`sequence_1.faa`,`sequence_2.faa` y `sequence_3.faa`. **Nota:** Es sumamente importante descargar los 3 archivos **por separado**. Si los archivos se van a las `Descargas/`, seguramente se les asignará un nombre como `sequence (1).fasta`, el cual para efectos prácticos deberás cambiar a `sequence_1.faa` **para cada archivo**. Además para esta parte, es necesario que describas -en `comandos.txt`- a grandes rasgos cuál es la función de la [SARS-CoV-2 spike ectodomain structure](https://www.annualreviews.org/doi/abs/10.1146/annurev-virology-110615-042301).*
 
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_03.jpg)
 
