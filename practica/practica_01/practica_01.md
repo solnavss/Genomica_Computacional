@@ -83,9 +83,27 @@ echo "Ahora sí, con todo!"
 
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_09.jpg)
 ***
-03. ^Finalmente, deberás mover los archivos `sequence.fasta`, `sequence.gff3`, `sequence_1.faa`, `sequence_2.faa`, `sequence_3.faa`,  `sra_data.fasta.gz` y `sra_data.fastq.gz` al directorio `raw_data/` **(Ej. ~/Desktop/genomica_2020-2/mnavarro_p01/data/raw_data/)**
+03. ^Finalmente, deberás mover los siete archivos `sequence.fasta`, `sequence.gff3`, `sequence_1.faa`, `sequence_2.faa`, `sequence_3.faa`,  `sra_data.fasta.gz` y `sra_data.fastq.gz` al directorio `raw_data/` **(Ej. ~/Desktop/genomica_2020-2/mnavarro_p01/data/raw_data/)**
 
 ## Parte IV. __ / 20
 
+01. ^Realiza las siete ligas simbólica suaves de todos los archivos que acaban de descargar al directorio `data/filtered`.
+02. ^Mueve las ligas simbólicas suaves `sequence_1.faa`, `sequence_2.faa` y `sequence_3.faa` a un nuevo directorio llamado `proteins`.
+03. ^Colócate dentro del directorio `proteins` y crea un nuevo archivo de texto llamado `glycoproteins.faa`. Obten la primera línea de los tres archivos y repórtalas -en `comandos.txt`-. 
+04. ^Sin copiar y pegar en un editor, redirecciona el contenido de las tres secuencias al archivo `glycoproteins.faa` de tal forma que obtengas el orden siguiente.
+```
+>pdb|6VYB|A Chain A, spike glycoprotein
+MGILPSPGMPALLSLVSLLSVLLMGCVAETGTQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHST
+QDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVN
+...
+>pdb|6VYB|B Chain B, spike glycoprotein
+MGILPSPGMPALLSLVSLLSVLLMGCVAETGTQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHST
+QDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVN
+...
+>pdb|6VYB|C Chain C, spike glycoprotein
+MGILPSPGMPALLSLVSLLSVLLMGCVAETGTQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHST
+QDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVN
+...
+```
 ## Parte V. __ / 20
 
