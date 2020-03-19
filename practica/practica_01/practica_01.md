@@ -75,7 +75,7 @@ echo "Ahora sí, con todo!"
 
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_06.jpg)
 ***
-*Una vez obtenidos los archivos anteriores, deberas regresar al vínculo de NCBI inicial y seguir los pasos para obtener los archivos:`sra_data.fasta.gz` y `sra_data.fastq.gz`.
+*Una vez obtenidos los archivos anteriores, deberas regresar al vínculo de NCBI inicial y seguir los pasos para obtener los archivos:`sra_data.fasta.gz` y `sra_data.fastq.gz`.*
 
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_07.jpg)
 
@@ -106,7 +106,8 @@ QDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVN
 ...
 ```
 05. ^Regresa al directorio anterior. Usa el comando adecuado para ver en la terminal las primeras 5 líneas de los archivos `sequence.fasta` y `sra_data.fasta.gz`. Repórtalas -en `comandos.txt`-.
-06. ^Ya que reportasete las primeras 5 líneas de los archivos, puedes notar que el nombre/header de las secuencias esta delimitado por el caracter '>'. Cuenta cuántos headers tienes y reporta el número -en `comandos.txt`- recuerda usar pipes |. **Nota:** Como te habrás dado cuenta uno de los archivos tiene una extensión `.gz` o `gunzip` lo que quiere decir que está comprimido. Si abres el archivo con los comandos `less`, `more` o `cat` te darás cuenta que está en binario. Hazlo. Para poder acceder a él sin necesidad de descomprimirlo, puedes usar el siguiente ejemplo `zless sra_data.fasta.gz | <comando> ...`.      
+06. ^Ya que reportasete las primeras 5 líneas de los archivos, puedes notar que el nombre/header de las secuencias esta delimitado por el caracter '>'. Cuenta cuántos headers tienes y reporta el número -en `comandos.txt`- recuerda usar pipes |. **Nota:** Como te habrás dado cuenta uno de los archivos tiene una extensión `.gz` o `gunzip` lo que quiere decir que está comprimido. Si abres el archivo con los comandos `less`, `more` o `cat` te darás cuenta que está en binario. Hazlo. Para poder acceder a él sin necesidad de descomprimirlo, puedes usar el siguiente ejemplo `zless sra_data.fasta.gz | <comando> ...`. 
+07. ^De igual manera abre el archivo [fastq](https://en.wikipedia.org/wiki/FASTQ_format) `sra_data.fastq.gz` y obten las primeras 12 líneas. Repórtalas -en `comandos.txt`-. Observa el patrón e identifica qué caracter te podría ayudar a obtener un conteo de las secuencias. Utiliza el patrón que elegiste para contar la cantidad de secuencias que hay y escríbelo.  
 
 ## Parte V. __ / 20
 
