@@ -112,6 +112,6 @@ QDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVN
 09. ^Abre el archivo [.gff3](https://www.ensembl.org/info/website/upload/gff3.html) de las siguientes formas `less sequence.gff3` y `less -S sequence.gff3`. Observa las diferencias. Repórtalas en un enunciado. 
 10. ^Filtra la tercera columna por la categoría `gene` y reporta la cantidad de genes que tiene el archivo.   
 
-## PARTE V. __ / 20
+## Parte V. __ / 20
 
 
