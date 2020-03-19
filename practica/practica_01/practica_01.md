@@ -109,6 +109,9 @@ QDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVN
 06. ^Ya que reportasete las primeras 5 líneas de los archivos, puedes notar que el nombre/header de las secuencias esta delimitado por el caracter '>'. Cuenta cuántos headers tienes y reporta el número -en `comandos.txt`- recuerda usar pipes |. **Nota:** Como te habrás dado cuenta uno de los archivos tiene una extensión `.gz` o `gunzip` lo que quiere decir que está comprimido. Si abres el archivo con los comandos `less`, `more` o `cat` te darás cuenta que está en binario. Hazlo. Para poder acceder a él sin necesidad de descomprimirlo, puedes usar el siguiente ejemplo `zless sra_data.fasta.gz | <comando> ...`. 
 07. ^De igual manera abre el archivo [fastq](https://en.wikipedia.org/wiki/FASTQ_format) `sra_data.fastq.gz` y obten las primeras 12 líneas. Repórtalas -en `comandos.txt`-. Observa el patrón e identifica qué caracter te podría ayudar a obtener un conteo de las secuencias. Utiliza el patrón que elegiste para contar la cantidad de secuencias que hay y escríbelo.
 08. ^Explica la diferencia entre los formatos `.faa`, `.fastqc` y `fasta`. ¿Las secuencias son de nucleótidos (ATCG) o de aminoácidos? ¿Cómo explicas la diferencia entre el número de lecturas de los archivos `.fasta`? ¿Qué es el formato `.fastqc` y ¿A qué corresponde la información de las líneas en el formato `fastqc`?.  
+09. ^Abre el archivo [.gff3](https://www.ensembl.org/info/website/upload/gff3.html) de las siguientes formas `less sequence.gff3` y `less -S sequence.gff3`. Observa las diferencias. Repórtalas en un enunciado. 
+10. Filtra la tercera columna por la categoría `gene` y reporta la cantidad de genes que tiene el archivo.   
 
-## Parte V. __ / 20
+V. __ / 20
+
 
