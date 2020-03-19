@@ -89,8 +89,8 @@ echo "Ahora sí, con todo!"
 
 01. ^Realiza las siete ligas simbólica suaves de todos los archivos que acaban de descargar al directorio `data/filtered`.
 02. ^Mueve las ligas simbólicas suaves `sequence_1.faa`, `sequence_2.faa` y `sequence_3.faa` a un nuevo directorio llamado `proteins`.
-03. ^Colócate dentro del directorio `proteins` y crea un nuevo archivo de texto llamado `glycoproteins.faa`. Obten la primera línea de los tres archivos y repórtalas -en `comandos.txt`-. 
-04. ^Sin copiar y pegar en un editor, redirecciona el contenido de las tres secuencias al archivo `glycoproteins.faa` de tal forma que obtengas el orden siguiente.
+03. ^Colócate dentro del directorio `proteins` y crea un nuevo archivo de texto llamado `glycoproteins.faa`. Obten las primeras dos líneas de los tres archivos y repórtalas -en `comandos.txt`-. 
+04. ^Sin copiar y pegar (Crtl+c, Ctrl+p) en un editor, redirecciona el contenido de las tres secuencias al archivo `glycoproteins.faa` de tal forma que obtengas el orden siguiente.
 ```
 >pdb|6VYB|A Chain A, spike glycoprotein
 MGILPSPGMPALLSLVSLLSVLLMGCVAETGTQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHST
@@ -105,5 +105,8 @@ MGILPSPGMPALLSLVSLLSVLLMGCVAETGTQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHST
 QDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVN
 ...
 ```
+05. ^Regresa al directorio anterior. Usa el comando adecuado para ver en la terminal las primeras 5 líneas de los archivos `sequence.fasta` y `sra_data.fasta.gz`. Repórtalas -en `comandos.txt`-.
+06. ^Ya que reportasete las primeras 5 líneas de los archivos, puedes notar que el nombre/header de las secuencias esta delimitado por el caracter '>'. Cuenta cuántos headers tienes y reporta el número -en `comandos.txt`- recuerda usar pipes |. **Nota:** Como te habrás dado cuenta uno de los archivos tiene una extensión `.gz` o `gunzip` lo que quiere decir que está comprimido. Si abres el archivo con los comandos `less`, `more` o `cat` te darás cuenta que está en binario. Hazlo. Para poder acceder a él sin necesidad de descomprimirlo, puedes usar el siguiente ejemplo `zless sra_data.fasta.gz | <comando> ...`.      
+
 ## Parte V. __ / 20
 
