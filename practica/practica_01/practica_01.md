@@ -110,7 +110,7 @@ QDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVN
 07. ^De igual manera abre el archivo [fastq](https://en.wikipedia.org/wiki/FASTQ_format) `sra_data.fastq.gz` y obten las primeras 12 líneas. Repórtalas -en `comandos.txt`-. Observa el patrón e identifica qué caracter te podría ayudar a obtener un conteo de las secuencias. Utiliza el patrón que elegiste para contar la cantidad de secuencias que hay y escríbelo.
 08. ^Explica la diferencia entre los formatos `.faa`, `.fastqc` y `fasta`. ¿Las secuencias son de nucleótidos (ATCG) o de aminoácidos? ¿Cómo explicas la diferencia entre el número de lecturas de los archivos `.fasta`? ¿Qué es el formato `.fastqc` y ¿A qué corresponde la información de las líneas en el formato `fastqc`?.  
 09. ^Abre el archivo [.gff3](https://www.ensembl.org/info/website/upload/gff3.html) de las siguientes formas `less sequence.gff3` y `less -S sequence.gff3`. Observa las diferencias. Repórtalas en un enunciado. 
-10. Filtra la tercera columna por la categoría `gene` y reporta la cantidad de genes que tiene el archivo.   
+10. ^Filtra la tercera columna por la categoría `gene` y reporta la cantidad de genes que tiene el archivo.   
 
 V. __ / 20
 
