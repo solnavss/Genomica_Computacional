@@ -52,7 +52,7 @@ echo "Ahora sí, con todo!"
 
 ## Parte III. __ / 20
 
-01. ^En esta parte, trabajarán con secuencias genómicas del Covid-19 (coronavirus), el cuál actualmente (17.03.20) es considerado pandemia. Para tener contexto de los datos, a continuación les anexo un video sobre la [estructura molecular del Covid-19](https://www.youtube.com/watch?v=I0AbpnFP1g8). Deberán elaborar un resumen de máximo 120 palabras y anexar al archivo `comandos.txt`. 
+01. ^En esta parte, trabajarán con secuencias genómicas del Covid-19 ([coronavirus](https://www.youtube.com/watch?v=BtN-goy9VOY&feature=youtu.be)), el cuál actualmente (17.03.20) es considerado [pandemia](https://nextstrain.org/ncov). Para tener contexto de los datos, a continuación les anexo un video sobre la [estructura molecular del Covid-19](https://www.youtube.com/watch?v=I0AbpnFP1g8). Deberán elaborar un resumen de máximo 120 palabras y anexar al archivo `comandos.txt`. 
 
 02. ^Seguir las siguientes indicaciones:
 ***
