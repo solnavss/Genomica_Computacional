@@ -1,5 +1,5 @@
 # Genómica Computacional: Grupo 7075, Semestre 2020-2
-## Práctica 01 - Herramientas bioinformáticas I (Entrega: 30.03.20/23:59)
+## Práctica 01 - Herramientas Bioinformáticas I (Entrega: 30.03.20/23:59)
 
 **Indicaciones:** La práctica esta compuesta de cinco partes con ejercicios para repasar los comandos de bash que se vieron en clase, también el manejo de secuencias y algunos formatos particulares (`.fna`/`.fasta`, `.gff3`, `.faa` y `.fastqc`). Deberán resolver de manera **individual** los ejercicios conforme se indique y anotar los comandos que se piden en un archivo `.txt`. Es responsabilidad del alumno subir el directorio correspondiente a su cuenta de [git](https://github.com/) **(Parte IV)** y corroborar que se encuentre toda la información que se le pidió. Así mismo, tendrán que enviar vía [Google Classroom](https://classroom.google.com/) la liga a su cuenta de `git` antes de que cierre la asignación **(30.03.20/23:59)**. **Nota:** Si existen dudas al respecto de la práctica, favor de escribir a mi correo. **Estaré respondiendo dudas a más tardar el lunes 30.03.20 a las 11:59.**
 
