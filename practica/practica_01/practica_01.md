@@ -118,7 +118,7 @@ Nuevamente visita la Unidad 2 del siguiente repositorio [BioinfinvRepo](https://
 * Github
 
 01. Una vez que leyeron las secciones anteriores, ceen un respaldo para ustedes de los ejercicios que hicieron con anterioridad. 
-02 Ahora sí, suban la carpeta genomica_2020-2 (con todos sus ejercicios resueltos) a su repositorio. 
+02. Ahora sí, suban la carpeta genomica_2020-2 (con todos sus ejercicios resueltos) a su repositorio. 
 03. Corroboren que todos sus archivos estén disponibles desde su git. Consideren que aquellos directorios que se encuentran vacíos, no apareceran. 
 04. En la próxima sesión de laboratorio vamos a ocupar comandos de git, así que lean con detenimiento y si lo necesitan repasen con los ejercicios que ahí se sugieren.
 
