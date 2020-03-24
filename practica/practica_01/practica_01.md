@@ -111,4 +111,8 @@ QDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVN
 
 ## Parte V. __ / 20
 
+Nuevamente visita la Unidad 2 del siguiente repositorio [BioinfinvRepo](https://github.com/u-genoma/BioinfinvRepro/blob/master/Unidad2/Unidad2_Organizacion_proyecto_bioinf.md) y realiza únicamente los ejercicios que se indican. En el repositorio, leer las siguientes secciones:
+* Markdown
+* git
+* Github
 
