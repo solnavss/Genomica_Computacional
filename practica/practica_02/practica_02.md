@@ -1,0 +1,55 @@
+# Genómica Computacional: Grupo 7075, Semestre 2020-2
+## Práctica 02 - Análisis de datos de Secuenciación Masiva (Entrega: 20.04.20/23:59)
+
+**Indicaciones:** La práctica esta compuesta de cinco partes con ejercicios para repasar algunos comandos de bash, teoría sobre el manejo de secuencias, algunos formatos particulares (`.fna`/`.fasta`, `.gff3`, `.faa` y `.fastqc`) e instalación de software específico. Deberán resolver **en equipos máximo de 3 personas** los ejercicios conforme se indique y anotar los comandos que se piden en un archivo tipo [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) `.md`. Es responsabilidad de los alumnos subir el directorio correspondiente a su cuenta de [git](https://github.com/) y corroborar que se encuentre toda la información que se les pidió. Así mismo, tendrán que enviar vía [Google Classroom](https://classroom.google.com/) la liga a su cuenta de `git` antes de que cierre la asignación **(20.04.20/23:59)**. **Nota:** Si existen dudas al respecto de la práctica, favor de escribir a mi correo. **Estaré respondiendo dudas a más tardar el lunes 20.04.20 a las 11:59.**
+
+***
+
+## Parte I. __ / 20
+
+**Objetivo:** En esta práctica, se espera que los alumnos revisen los flujos de datos posibles desde la salida del secuenciador, hasta una aplicación final. Los distintos formatos con los que tradicionalmente se manejan los datos y cómo se realiza el análisis primario.
+
+01. ^En su directorio `genomica_2020-2` un integrante del equipo deberá crear uno nuevo de la siguiente manera (minúsculas): `nombredelequipo+_p02`. **Ejemplo:** Equipo: dinamita -> `dinamita_p02`. 
+02. ^Cada que se indique **(Ej. 1. ^)** deberán anotar los comandos que utilizaron para realizar el ejercicio en un archivo denominado `comandos_p02.md` utilizando cualquier editor de texto plano (`emacs`, `sublime text`, `atom`, `vi`, `vim`, `nano`, `bloc de notas`, `notepad++`, etc). Este archivo deberán crearlo dentro del directorio de su equipo.  
+03. En el nuevo directorio, tendrán que colaborar todos los integrantes del equipo con un flujo de trabajo de git. Es decir, el integrante que creo el directorio deberá subirlo a git y los demás deberán clonar el repositorio solicitando permiso de colaboración. 
+04. En el nuevo directorio deberán crear los directorios correspondientes: `data/`, `filtered/`, `/raw_data`, `meta/`, `scripts/`, `figures/` y `archive/`. 
+
+Los comandos de los ejercicios marcados **(Ej. 1. ^)** en el archivo `comandos_p02.md` deberán seguir el siguiente formato : 
+
+```
+# Comandos de la Práctica 01
+## Nombre del equipo
+## Integrante 1: Nombre(s) Apellido(s)
+## Integrante 2: Nombre(s) Apellido(s)
+## Integrante 3:Nombre(s) Apellido(s)
+
+## Parte I. 
+01. [comando] [opciones] [argumentos]
+02. [comando] [opciones] [argumentos]
+
+# Parte II.
+...
+```
+## Parte II. __ / 20
+
+**Flujo de datos de Secuenciación Masiva**
+
+Las plataformas de `Illumina` generan por default archivos en formato `.fastq`. Sin embargo, plataformas como `454` y `Ion Torrent` generan archivos en formato `.sff` de manera nativa, aunque es posible convertir este formato a `.fastq`. El análisis de calidad de las secuencias generadas en la corrida, se lleva a cabo sobre archivos en formato `.fastq`.
+
+Cuando los archivos `.fastq` son alineados contra un *genoma de referencia*, este último debe estar en formato `.fasta`. Si en cambio lo que se realiza es un ensamblado de novo, el resultado del ensamble también se presenta en formato `.fasta`.
+
+El resultado de llevar a cabo un proceso de alineamiento contra un genoma de referencia usando alineadores como `Bowtie2`, `Smalt` o `BWA`, será un archivo en formato `.sam`, que se puede convertir a un archivo en formato `.bam` (binario, mucho más compacto) o si se quiere mayor compresión, el `.bam` se puede convertir en un archivo con formato `.cram`.
+
+A partir de los archivos mencionados anteriormente es posible corroborar la localización de "features" o anotaciones típicamente usando archivos en formato `.gff3` o `.bed` en conjunto con los archivos `.bam`. También desde el archivo `.bam` se puede realizar una búsqueda de variantes y obtener un archivo en formato `.vcf` por sus iniciales "Variant Call Format".
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_01.jpg)
+
+01. Elabora una tabla comparativa de las características de algunas de las tecnologías de [secuenciación masiva](https://en.wikipedia.org/wiki/DNA_sequencing) por [generación](https://www.intechopen.com/books/next-generation-sequencing-advances-applications-and-challenges/next-generation-sequencing-an-overview-of-the-history-tools-and-omic-applications) y anota las referencias que utilices:
+
+| Plataforma/compañía          | Longitud de reads (pb)  | # reads x run  | Tiempo   | Costo x 10^6 bases  | Error (%)   | Química                    |
+| ------------------------------------ |:-------------------------------:| ------------------:| -----------:| ----------------------------:| --------------:| ---------------------------:|
+| Primera generación             |                                       |                       |               |                                    |                   |                                  |
+| Sanger/Life Technologies    | 800                                | 1                    | 2 hrs      | 2400                           | 0.3             | Dideoxy terminator   |
+| Segunda generación           |                                       |                       |               |                                    |                   |                                   |   
+| Tercera generación              |                                       |                       |               |                                    |                   |                                   |
+
