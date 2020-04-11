@@ -42,9 +42,9 @@ El resultado de llevar a cabo un proceso de alineamiento contra un genoma de ref
 
 A partir de los archivos mencionados anteriormente es posible corroborar la localización de "features" o anotaciones típicamente usando archivos en formato `.gff3` o `.bed` en conjunto con los archivos `.bam`. También desde el archivo `.bam` se puede realizar una búsqueda de variantes y obtener un archivo en formato `.vcf` por sus iniciales "Variant Call Format".
 
-![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_01.jpg)
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_01.png)
 
-01. Elabora una tabla comparativa de las características de algunas de las tecnologías de [secuenciación masiva](https://en.wikipedia.org/wiki/DNA_sequencing) por [generación](https://www.intechopen.com/books/next-generation-sequencing-advances-applications-and-challenges/next-generation-sequencing-an-overview-of-the-history-tools-and-omic-applications) y anota las referencias que utilices:
+01. Vean el siguiente video sobre tecnologías de [secuanciación masiva](https://www.youtube.com/watch?v=jFCD8Q6qSTM&list=PLTt9kKfqE_0Gem8hIcJEn7YcesuuKdt_n&index=2&t=441s) (NGS) y elaboren una tabla comparativa de las características de *algunas* de las [tecnologías](https://en.wikipedia.org/wiki/DNA_sequencing) por [generación](https://www.intechopen.com/books/next-generation-sequencing-advances-applications-and-challenges/next-generation-sequencing-an-overview-of-the-history-tools-and-omic-applications). Anoten las referencias que hayan utilizado. 
 
 | Plataforma/compañía          | Longitud de reads (pb)  | # reads x run  | Tiempo   | Costo x 10^6 bases  | Error (%)   | Química                    |
 | ------------------------------------ |:-------------------------------:| ------------------:| -----------:| ----------------------------:| --------------:| ---------------------------:|
@@ -53,3 +53,65 @@ A partir de los archivos mencionados anteriormente es posible corroborar la loca
 | Segunda generación           |                                       |                       |               |                                    |                   |                                   |   
 | Tercera generación              |                                       |                       |               |                                    |                   |                                   |
 
+
+
+
+
+
+
+
+
+## Parte III. __ / 20
+
+**Formatos de archivos más comunes: (fasta)[https://en.wikipedia.org/wiki/FASTA_format]**
+
+Este formato fue definido por el programa `FastA`, pero actualmente es usado por una gran variedad de programas (por ejemplo, `BLAST`, `gibbs`, alineadores, etc.) y se ha convertido en un estándar de formato de secuencias tanto de nucleótidos como de aminoácidos.
+
+```
+>SRR11241254.156.1 156 length=185
+ACTCAGTTTGCCTGTTTTACAGGTTCGCGACGTGCTCGTACGTGGCTTTGGAGACTCCGTGGAGGAGGTCTTATCAGAGGCACGTCAACATCTTAAAGATGGCACTTGTGGCTTAGTAGAAGTTGAAAAAGGCGTTTTGCCTCAACTTGAACAGCCCTATGTGTTCATCAAACGTTCGGATGCTC
+>SRR11241254.157.1 157 length=185
+ACTCAGTTTGCCTGTTTTACAGGTTCGCGACGTGCTCGTACGTGGCTTTGGAGACTCCGTGGAGGAGGTCTTATCAGAGGCACGTCAACATCTTAAAGATGGCACTTGTGGCTTAGTAGAAGTTGAAAAAGGCGTTTTGCCTCAACTTGAACAGCCCTATGTGTTCATCAAACGTTCGGATGCTC
+>SRR11241254.158.1 158 length=185
+ACTCAGTTTGCCTGTTTTACAGGTTCGCGACGTGCTCGTACGTGGCTTTGGAGACTCCGTGGAGGAGGTCTTATCAGAGGCACGTCAACATCTTAAAGATGGCACTTGTGGCTTAGTAGAAGTTGAAAAAGGCGTTTTGCCTCAACTTGAACAGCCCTATGTGTTCATCAAACGTTCGGATGCTC
+```
+
+**Características:**
+
+* Cada secuencia inicia con el símbolo ">" seguido del identificador de la secuencia y todos los comentarios que se quiera sobre esa misma línea. A esta línea se le llama encabezado ("header") y tiene el formato "origen | id" 
+* La siguiente línea describe propiamente la secuencia, a la que se le pueden insertar saltos de línea. Los caracteres empleados requeridos corresponden al código utilizado para las secuencias de ADN o aminoácidos.
+* Dentro de un solo archivo puede haber una o varias secuencias.
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_02.png)
+
+**Formatos de archivos más comunes: [fastq](https://en.wikipedia.org/wiki/FASTQ_format)**
+
+Fastq es un formato basado en texto para que se ajuste tanto una secuencia biológica (de nucleótidos por lo general) y sus registros de calidad correspondientes en formato phred.
+
+Con este formato se evita tener las calidades numéricas para cada base en un archivo diferente, con lo que se condensa la información. Cada secuencia es descrita en término de 4 Renglones. El primero de los cuales es conocido como identificador de la secuencia e inicia con una arroba (@). El segundo es propiamente la secuencia, por lo tanto, esta conformado solo de ATGC, el tercero repite el nombre de la secuencia, pero inicia con un símbolo +. El último renglón es la calidad en formato Phred.
+
+```
+@SRR11241254.156.1 156 length=185
+ACTCAGTTTGCCTGTTTTACAGGTTCGCGACGTGCTCGTACGTGGCTTTGGAGACTCCGTGGAGGAGGTCTTATCAGAGGCACGTCAACATCTTAAAGATGGCACTTGTG
+GCTTAGTAGAAGTTGAAAAAGGCGTTTTGCCTCAACTTGAACAGCCCTATGTGTTCATCAAACGTTCGGATGCTC
++SRR11241254.156.1 156 length=185
+CCCCCGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGCGGGGGCFGGGGGGGGGGGEGGGGDGFGGGGGGGGGGGGGGGGGGG?FFGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGCE7FGGGGGFGGGGGGGGGGGGFFCFFEGFGGGGGGGGFGFGGGGGGGGCGGGFGC
+@SRR11241254.157.1 157 length=185
+ACTCAGTTTGCCTGTTTTACAGGTTCGCGACGTGCTCGTACGTGGCTTTGGAGACTCCGTGGAGGAGGTCTTATCAGAGGCACGTCAACATCTTAAAGATGGCACTTGTGGCTTAGTAGAAGTTGAAAAAGGCGTTTTGCCTCAACTTGAACAGCCCTATGTGTTCATCAAACGTTCGGATGCTC
++SRR11241254.157.1 157 length=185
+CCCCCGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGFGGGGGGGGGGGGGGGGGGGGFGGGGGGGGGGGGGGGGGGGGGGFGGGGGGGGGGGGGGGGG
+
+```
+**Calidad Phred, código ASCII**
+
+Las referencias [phred](https://en.wikipedia.org/wiki/Phred_quality_score) están asociadas a la confiabilidad de cada carácter de la secuencia, a partir de un valor Q = -10log P . El valor de calidad Q es un número entero de mapeo de P (la probabilidad de que la base en la secuencia sea incorrecta). La ecuación es el estándar de Sanger para evaluar la confianza de una base, también conocida como puntuación de calidad Phred. 
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_03.png)
+
+Las calidades de un archivo `fastq` de *Illumina* pueden representarse con la codificación `Phred 33`, que está constituida por el conjunto de valores de la tabla de códigos [ASCII](https://www.ascii-code.com/) desde el valor 33 hasta el 73. 
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_04.png)
+
+Esto es, desde el símbolo "!" hasta el símbolo "I" ya que el valor decimal para dichos símbolos va de 33 a 73. La codificación implica que a cada símbolo se le reste el valor 33, por lo que "!" representa un valor de 0 de calidad mientras que el símbolo "I" Representa un valor de 40 de calidad.
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_05.png)
