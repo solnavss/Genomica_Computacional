@@ -42,7 +42,7 @@ El resultado de llevar a cabo un proceso de alineamiento contra un genoma de ref
 
 A partir de los archivos mencionados anteriormente es posible corroborar la localización de "features" o anotaciones típicamente usando archivos en formato `.gff3` o `.bed` en conjunto con los archivos `.bam`. También desde el archivo `.bam` se puede realizar una búsqueda de variantes y obtener un archivo en formato `.vcf` por sus iniciales "Variant Call Format".
 
-![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_01.jpg)
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_01.png)
 
 01. Elabora una tabla comparativa de las características de algunas de las tecnologías de [secuenciación masiva](https://en.wikipedia.org/wiki/DNA_sequencing) por [generación](https://www.intechopen.com/books/next-generation-sequencing-advances-applications-and-challenges/next-generation-sequencing-an-overview-of-the-history-tools-and-omic-applications) y anota las referencias que utilices:
 
