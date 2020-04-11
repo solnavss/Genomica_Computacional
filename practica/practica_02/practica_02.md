@@ -53,17 +53,9 @@ A partir de los archivos mencionados anteriormente es posible corroborar la loca
 | Segunda generación           |                                       |                       |               |                                    |                   |                                   |   
 | Tercera generación              |                                       |                       |               |                                    |                   |                                   |
 
-
-
-
-
-
-
-
-
 ## Parte III. __ / 20
 
-**Formatos de archivos más comunes: (fasta)[https://en.wikipedia.org/wiki/FASTA_format]**
+**Formatos de archivos más comunes: [fasta](https://en.wikipedia.org/wiki/FASTA_format)**
 
 Este formato fue definido por el programa `FastA`, pero actualmente es usado por una gran variedad de programas (por ejemplo, `BLAST`, `gibbs`, alineadores, etc.) y se ha convertido en un estándar de formato de secuencias tanto de nucleótidos como de aminoácidos.
 
@@ -100,7 +92,6 @@ CCCCCGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGCGGGGGCFGGGGGGGGGGGEGGGGDGFGGGGGGGGGG
 ACTCAGTTTGCCTGTTTTACAGGTTCGCGACGTGCTCGTACGTGGCTTTGGAGACTCCGTGGAGGAGGTCTTATCAGAGGCACGTCAACATCTTAAAGATGGCACTTGTGGCTTAGTAGAAGTTGAAAAAGGCGTTTTGCCTCAACTTGAACAGCCCTATGTGTTCATCAAACGTTCGGATGCTC
 +SRR11241254.157.1 157 length=185
 CCCCCGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGFGGGGGGGGGGGGGGGGGGGGFGGGGGGGGGGGGGGGGGGGGGGFGGGGGGGGGGGGGGGGG
-
 ```
 **Calidad Phred, código ASCII**
 
