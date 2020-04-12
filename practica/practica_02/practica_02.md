@@ -170,3 +170,8 @@ Secuencia a comparar:
 `TTAGATAAAGGATACTG`
     
 04. ^Creen una *liga simbólica suave* del archivo `sequence.gff3`, dentro del directorio del equipo ej.  `genomica_2020-2/dinamita_p02/data/filtered`. Utilizando los comandos correspondientes, reporten para la columna tres cuántos reportes hay para cada una de las categorías.
+
+## Parte IV. __ / 20
+
+**Análisis de Calidad de Secuencias**
+
