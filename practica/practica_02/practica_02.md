@@ -175,3 +175,26 @@ Secuencia a comparar:
 
 **Análisis de Calidad de Secuencias**
 
+Como ya se observó, cada tecnología presenta ciertos sesgos y fuentes de error. En resumen, dentro de las principales fuentes de error que se pueden llegar a observar en el análisis de calidad de las secuencias podemos mencionar los siguientes:
+* Variación en la preparación biológica
+* Contaminación
+* Duplicados por PCR
+* Recombinación
+* Amplificación selectiva
+* Secuenciación
+* Error por sustitución de bases
+* Inserciones y deleciones
+* Calidad/confiabilidad de los datos generados
+
+**FastQC**
+
+`FastQC` es un software que tiene como objetivo proporcionar una manera simple de hacer algunas comprobaciones de control de calidad de datos de secuencias procedentes de metodologías de secuenciación de alto rendimiento. Proporciona un conjunto modular de análisis que se pueden utilizar para dar una impresión rápida de si sus datos tienen algún problema de calidad que deba ser tomado en cuenta antes de realizar cualquier análisis posterior.
+
+Las principales funciones de FastQC son:
+* Proporcionar una visión general y rápida que identifique en qué áreas puede haber problemas.
+* Gráficos y tablas para evaluar rápidamente los datos.
+* Exportación de los resultados a un archivo HTML.
+* Operación fuera de línea para permitir la generación automática de informes sin ejecutar la aplicación de forma interactiva.
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_09.png)
+
