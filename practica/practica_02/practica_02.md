@@ -105,3 +105,51 @@ Las calidades de un archivo `fastq` de *Illumina* pueden representarse con la co
 Esto es, desde el símbolo "!" hasta el símbolo "I" ya que el valor decimal para dichos símbolos va de 33 a 73. La codificación implica que a cada símbolo se le reste el valor 33, por lo que "!" representa un valor de 0 de calidad mientras que el símbolo "I" Representa un valor de 40 de calidad.
 
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_05.png)
+
+**Formatos de alineamiento: SAM / BAM y CRAM**
+
+Cuando un archivo `fastq` ha sido alineado contra un genoma de referencia, es posible obtener el resultado de este alineamiento en un archivo con formato `sam`.
+
+SAM significa "Sequence Alignment / Map". Se trata de un formato del texto delimitado por tabuladores que consiste en una sección de cabecera, que es opcional, y una sección de alineamientos. La cabecera, si está presente, antecede a la información de los alineamientos. Las líneas de la cabecera empiezan con "@", mientras que las líneas de los alineamientos no. Cada línea de los alineamientos tiene [11 campos](https://galaxyproject.org/tutorials/ngs/) obligatorios con la información esencial de alineación como la posición de mapeo y número variable de campos opcionales para obtener información específica flexibles o del alineador.
+
+`<QNAME>  <FLAG> <RNAME> <POS> <MAPQ> <CIGAR> <MRNM> <MPOS> <ISIZE> <SEQ> <QUAL>`
+
+Con este formato, logramos tener en una sola línea la información tanto de la secuencia como de su posición en una referencia.
+
+`ERR458493 .552967 16 chrI 140 255 12 M61232N37M2S * 0 0 CCACTCGTTCACCAGGGCCGGCGGGCTGATCACTTTATCGTGCATCTTGGC BB?HHJJIGHHJIGIIJJIJGIJIJJIIIGHBJJJJJJHHHHFFDDDA1+B NH:i:1 HI:i:1 AS:i:41 nM:i:2`
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_06.png)
+
+Un archivo BAM, contiene la misma información que un archivo SAM pero está comprimido en el formato BGZF. Los archivos BGZF permiten accesos aleatorios a través del índice del archivo BAM.
+
+El formato [CRAM](https://samtools.github.io/hts-specs/CRAMv3.pdf) fue diseñado por el EBI (European Bioinformatic Institute) para reducir el espacio necesario y almacenar todas las secuencias que requieren ser archivadas. Son los archivos con mayor capacidad de compresión actualmente.
+
+**Formato de anotación: GFF**
+
+Un archivo `gff` (“General Feature Format”), es útil para contextualizar en las secuencias nucleotídicas, información genómica como puede ser la ubicación de un gen en dicha secuencia. GFF es un formato propuesto como un protocolo para transferir fácilmente información de los genes de un organismo.
+
+*Características:*
+
+* Archivo de texto: los campos están en una sola línea y separados por tabuladores 
+
+` <seqname> <source> <feature> <start> <end> <score> <strand> <frame>`
+
+```
+<seqname>: Nombre de la secuencia
+<source>: La fuente de la secuencia
+<feature>: Tipo de secuencia (gen, CDS, etc.)
+<start>: Posición de inicio de la secuencia
+<end>: Posición final de la secuencian
+<score>: Calificación de la secuencia
+<strand>: Dirección de la secuencia
+<frame>: Marco de referencia de la secuencia
+[attributes]: Otros atributos definidos por el usuario
+[comments]: Cualquier comentario acerca de la secuencia
+```
+
+*Formato de llamado de variantes: VCF*
+
+Un archivo `vcf` (Variant Call Format) tiene un formato que almacena de una manera comprimida información sobre variantes en las secuencias de genes. Contiene líneas de metainformación en las líneas de la cabecera, y luego cada línea de datos contiene información acerca de una posición en el genoma. El formato también tiene la capacidad de contener información sobre el [genotipo](https://samtools.github.io/hts-specs/VCFv4.2.pdf) de las muestras para cada posición. 
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_07.png)
+
