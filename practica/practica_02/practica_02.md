@@ -17,7 +17,7 @@
 Los comandos de los ejercicios marcados **(Ej. 1. ^)** en el archivo `comandos_p02.md` deberán seguir el siguiente formato : 
 
 ```
-# Comandos de la Práctica 01
+# Comandos de la Práctica 02
 ## Nombre del equipo
 ## Integrante 1: Nombre(s) Apellido(s)
 ## Integrante 2: Nombre(s) Apellido(s)
@@ -43,6 +43,8 @@ El resultado de llevar a cabo un proceso de alineamiento contra un genoma de ref
 A partir de los archivos mencionados anteriormente es posible corroborar la localización de "features" o anotaciones típicamente usando archivos en formato `.gff3` o `.bed` en conjunto con los archivos `.bam`. También desde el archivo `.bam` se puede realizar una búsqueda de variantes y obtener un archivo en formato `.vcf` por sus iniciales "Variant Call Format".
 
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_01.png)
+
+***
 
 01. Vean el siguiente video sobre tecnologías de [secuanciación masiva](https://www.youtube.com/watch?v=jFCD8Q6qSTM&list=PLTt9kKfqE_0Gem8hIcJEn7YcesuuKdt_n&index=2&t=441s) (NGS) y elaboren una tabla comparativa de las características de *algunas* de las [tecnologías](https://en.wikipedia.org/wiki/DNA_sequencing) por [generación](https://www.intechopen.com/books/next-generation-sequencing-advances-applications-and-challenges/next-generation-sequencing-an-overview-of-the-history-tools-and-omic-applications). Anoten las referencias que hayan utilizado. 
 
@@ -153,15 +155,46 @@ Un archivo `vcf` (Variant Call Format) tiene un formato que almacena de una mane
 
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_07.png)
 
-01. ^Crea una *liga simbólica suave* del archivo `sra_data.fastq.gz`, dentro del directorio del equipo ej.  `genomica_2020-2/dinamita_p02/data/filtered`. Descomprimelo utilizando el comando `gunzip -c sra_data.fastq.gz` para conservar el archivo original comprimido. Usando awk convierte este archivo de `fastq` a `fasta`.
-02. ^Filtra únicamente el dato de la longitud de las lecturas del archivo `fasta` usando los comandos correspondientes y crea un nuevo archivo de texto con todas las longitudes separadas por coma. Posteriormente obtén el promedio de las secuencias. 
+***
+
+01. ^Creen una *liga simbólica suave* del archivo `sra_data.fastq.gz`, dentro del directorio del equipo ej.  `genomica_2020-2/dinamita_p02/data/filtered`. Descomprimanlo utilizando el comando `gunzip -c sra_data.fastq.gz` para conservar el archivo original comprimido. Usando awk conviertan este archivo de `fastq` a `fasta`.
+02. ^Filtren únicamente el dato de la longitud de las lecturas del archivo `fasta` usando los comandos correspondientes y creen un nuevo archivo de texto con todas las longitudes separadas por coma. Posteriormente obtén el promedio de las secuencias. 
 03. Un string de CIGAR de 36M significa que 36 posiciones de la secuencia hacen "match" con el genoma de referencia. Suponiendo que el genoma de referencia tiene un fragmento con la secuencia que se muestra a continuación ¿Cómo se vería el alineamiento? y ¿Cuál sería su CIGAR string?
 
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_08.png)
 
 Secuencia de referencia:
 `AGCATGTTAGATTAGATAGCTGTGCTA...`
+
 Secuencia a comparar:
 `TTAGATAAAGGATACTG`
     
-04. ^Crea una *liga simbólica suave* del archivo `sequence.gff3`, dentro del directorio del equipo ej.  `genomica_2020-2/dinamita_p02/data/filtered`. Utilizando los comandos correspondientes, reporta para la columna tres cuántos reportes hay para cada una de las categorías.
+04. ^Creen una *liga simbólica suave* del archivo `sequence.gff3`, dentro del directorio del equipo ej.  `genomica_2020-2/dinamita_p02/data/filtered`. Utilizando los comandos correspondientes, reporten para la columna tres cuántos reportes hay para cada una de las categorías.
+
+## Parte IV. __ / 20
+
+**Análisis de Calidad de Secuencias**
+
+Como ya se observó, cada tecnología presenta ciertos sesgos y fuentes de error. En resumen, dentro de las principales fuentes de error que se pueden llegar a observar en el análisis de calidad de las secuencias podemos mencionar los siguientes:
+* Variación en la preparación biológica
+* Contaminación
+* Duplicados por PCR
+* Recombinación
+* Amplificación selectiva
+* Secuenciación
+* Error por sustitución de bases
+* Inserciones y deleciones
+* Calidad/confiabilidad de los datos generados
+
+**FastQC**
+
+`FastQC` es un software que tiene como objetivo proporcionar una manera simple de hacer algunas comprobaciones de control de calidad de datos de secuencias procedentes de metodologías de secuenciación de alto rendimiento. Proporciona un conjunto modular de análisis que se pueden utilizar para dar una impresión rápida de si sus datos tienen algún problema de calidad que deba ser tomado en cuenta antes de realizar cualquier análisis posterior.
+
+Las principales funciones de FastQC son:
+* Proporcionar una visión general y rápida que identifique en qué áreas puede haber problemas.
+* Gráficos y tablas para evaluar rápidamente los datos.
+* Exportación de los resultados a un archivo HTML.
+* Operación fuera de línea para permitir la generación automática de informes sin ejecutar la aplicación de forma interactiva.
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_09.png)
+
