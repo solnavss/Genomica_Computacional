@@ -196,5 +196,9 @@ Las principales funciones de FastQC son:
 * Exportación de los resultados a un archivo HTML.
 * Operación fuera de línea para permitir la generación automática de informes sin ejecutar la aplicación de forma interactiva.
 
+Excellent quality
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_09.png)
+
+Hmmmm....Ok.
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_09.png)
 
