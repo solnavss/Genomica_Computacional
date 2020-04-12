@@ -200,5 +200,5 @@ Excellent quality
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_09.png)
 
 Hmmmm....Ok.
-![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_09.png)
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_10.png)
 
