@@ -157,8 +157,8 @@ Un archivo `vcf` (Variant Call Format) tiene un formato que almacena de una mane
 
 ***
 
-01. ^Crea una *liga simbólica suave* del archivo `sra_data.fastq.gz`, dentro del directorio del equipo ej.  `genomica_2020-2/dinamita_p02/data/filtered`. Descomprimelo utilizando el comando `gunzip -c sra_data.fastq.gz` para conservar el archivo original comprimido. Usando awk convierte este archivo de `fastq` a `fasta`.
-02. ^Filtra únicamente el dato de la longitud de las lecturas del archivo `fasta` usando los comandos correspondientes y crea un nuevo archivo de texto con todas las longitudes separadas por coma. Posteriormente obtén el promedio de las secuencias. 
+01. ^Creen una *liga simbólica suave* del archivo `sra_data.fastq.gz`, dentro del directorio del equipo ej.  `genomica_2020-2/dinamita_p02/data/filtered`. Descomprimanlo utilizando el comando `gunzip -c sra_data.fastq.gz` para conservar el archivo original comprimido. Usando awk conviertan este archivo de `fastq` a `fasta`.
+02. ^Filtren únicamente el dato de la longitud de las lecturas del archivo `fasta` usando los comandos correspondientes y creen un nuevo archivo de texto con todas las longitudes separadas por coma. Posteriormente obtén el promedio de las secuencias. 
 03. Un string de CIGAR de 36M significa que 36 posiciones de la secuencia hacen "match" con el genoma de referencia. Suponiendo que el genoma de referencia tiene un fragmento con la secuencia que se muestra a continuación ¿Cómo se vería el alineamiento? y ¿Cuál sería su CIGAR string?
 
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_08.png)
@@ -169,4 +169,4 @@ Secuencia de referencia:
 Secuencia a comparar:
 `TTAGATAAAGGATACTG`
     
-04. ^Crea una *liga simbólica suave* del archivo `sequence.gff3`, dentro del directorio del equipo ej.  `genomica_2020-2/dinamita_p02/data/filtered`. Utilizando los comandos correspondientes, reporta para la columna tres cuántos reportes hay para cada una de las categorías.
+04. ^Creen una *liga simbólica suave* del archivo `sequence.gff3`, dentro del directorio del equipo ej.  `genomica_2020-2/dinamita_p02/data/filtered`. Utilizando los comandos correspondientes, reporten para la columna tres cuántos reportes hay para cada una de las categorías.
