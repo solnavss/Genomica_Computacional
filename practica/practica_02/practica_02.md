@@ -147,7 +147,7 @@ Un archivo `gff` (“General Feature Format”), es útil para contextualizar en
 [comments]: Cualquier comentario acerca de la secuencia
 ```
 
-*Formato de llamado de variantes: VCF*
+**Formato de llamado de variantes: VCF**
 
 Un archivo `vcf` (Variant Call Format) tiene un formato que almacena de una manera comprimida información sobre variantes en las secuencias de genes. Contiene líneas de metainformación en las líneas de la cabecera, y luego cada línea de datos contiene información acerca de una posición en el genoma. El formato también tiene la capacidad de contener información sobre el [genotipo](https://samtools.github.io/hts-specs/VCFv4.2.pdf) de las muestras para cada posición. 
 
