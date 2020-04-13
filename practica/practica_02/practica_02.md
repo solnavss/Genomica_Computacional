@@ -1,7 +1,7 @@
 # Genómica Computacional: Grupo 7075, Semestre 2020-2
 ## Práctica 02 - Análisis de datos de Secuenciación Masiva (Entrega: 20.04.20/23:59)
 
-**Indicaciones:** La práctica esta compuesta de cinco partes con ejercicios para repasar algunos comandos de bash, teoría sobre el manejo de secuencias, algunos formatos particulares (`.fna`/`.fasta`, `.gff3`, `.faa` y `.fastqc`) e instalación de software específico. Deberán resolver **en equipos máximo de 3 personas** los ejercicios conforme se indique y anotar los comandos que se piden en un archivo tipo [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) `.md`. Es responsabilidad de los alumnos subir el directorio correspondiente a su cuenta de [git](https://github.com/) y corroborar que se encuentre toda la información que se les pidió. Así mismo, tendrán que enviar vía [Google Classroom](https://classroom.google.com/) la liga a su cuenta de `git` antes de que cierre la asignación **(20.04.20/23:59)**. **Nota:** Si existen dudas al respecto de la práctica, favor de escribir a mi correo. **Estaré respondiendo dudas a más tardar el lunes 20.04.20 a las 11:59.**
+**Indicaciones:** La práctica esta compuesta de cinco partes con ejercicios para repasar algunos comandos de bash, manejo de secuencias, algunos formatos particulares (`.fna`, `.fasta`, `.gff3`, `.faa` y `.fastqc`) y uso de software específico. Deberán resolver **en equipos** los ejercicios conforme se indique y anotar los comandos que se piden en un archivo tipo [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) `.md`. Es responsabilidad de los alumnos subir el directorio correspondiente a su cuenta de [git](https://github.com/) y corroborar que se encuentre toda la información que se les pidió. Así mismo, tendrán que enviar vía [Google Classroom](https://classroom.google.com/) la liga a la cuenta de `git` donde se realizó la práctica antes de que cierre la asignación **(20.04.20/23:59)**. **Nota:** Si existen dudas al respecto de la práctica, favor de escribir a mi correo. **Estaré respondiendo dudas a más tardar el lunes 20.04.20 a las 11:59.**
 
 ***
 
@@ -10,18 +10,18 @@
 **Objetivo:** En esta práctica, se espera que los alumnos revisen los flujos de datos posibles desde la salida del secuenciador, hasta una aplicación final. Los distintos formatos con los que tradicionalmente se manejan los datos y cómo se realiza el análisis primario.
 
 01. ^En su directorio `genomica_2020-2` un integrante del equipo deberá crear uno nuevo de la siguiente manera (minúsculas): `nombredelequipo+_p02`. **Ejemplo:** Equipo: dinamita -> `dinamita_p02`. 
-02. ^Cada que se indique **(Ej. 1. ^)** deberán anotar los comandos que utilizaron para realizar el ejercicio en un archivo denominado `comandos_p02.md` utilizando cualquier editor de texto plano (`emacs`, `sublime text`, `atom`, `vi`, `vim`, `nano`, `bloc de notas`, `notepad++`, etc). Este archivo deberán crearlo dentro del directorio de su equipo.  
-03. En el nuevo directorio, tendrán que colaborar todos los integrantes del equipo con un flujo de trabajo de git. Es decir, el integrante que creo el directorio deberá subirlo a git y los demás deberán clonar el repositorio solicitando permiso de colaboración. 
-04. En el nuevo directorio deberán crear los directorios correspondientes: `data/`, `filtered/`, `/raw_data`, `meta/`, `scripts/`, `figures/` y `archive/`. 
+02. ^Cada que se indique **(Ej. 1. ^)** deberán anotar los comandos que utilizaron en un archivo denominado `comandos_p02.md`. Este archivo deberán crearlo dentro del directorio de su equipo.  
+03. En el nuevo directorio, tendrán que colaborar todos los integrantes del equipo usando el flujo de trabajo de git. Es decir, el integrante que creo el directorio deberá subirlo a git y los demás deberán clonar el repositorio solicitando permiso de colaboración. 
+04. En el nuevo directorio deberán crear los directorios correspondientes: `data/`, `data/filtered/`, `data/raw_data/`, `meta/`, `scripts/`, `figures/` y `archive/`. 
 
-Los comandos de los ejercicios marcados **(Ej. 1. ^)** en el archivo `comandos_p02.md` deberán seguir el siguiente formato : 
+Los comandos y outputs de los ejercicios marcados **(Ej. 1. ^)** en el archivo `comandos_p02.md` deberán seguir el siguiente formato : 
 
 ```
 # Comandos de la Práctica 02
 ## Nombre del equipo
-## Integrante 1: Nombre(s) Apellido(s)
-## Integrante 2: Nombre(s) Apellido(s)
-## Integrante 3:Nombre(s) Apellido(s)
+### Integrante 1: Nombre(s) Apellido(s)
+### Integrante 2: Nombre(s) Apellido(s)
+### Integrante 3:Nombre(s) Apellido(s)
 
 ## Parte I. 
 01. [comando] [opciones] [argumentos]
@@ -157,8 +157,8 @@ Un archivo `vcf` (Variant Call Format) tiene un formato que almacena de una mane
 
 ***
 
-01. ^Creen una *liga simbólica suave* del archivo `sra_data.fastq.gz`, dentro del directorio del equipo ej.  `genomica_2020-2/dinamita_p02/data/filtered`. Descomprimanlo utilizando el comando `gunzip -c sra_data.fastq.gz` para conservar el archivo original comprimido. Usando awk conviertan este archivo de `fastq` a `fasta`.
-02. ^Filtren únicamente el dato de la longitud de las lecturas del archivo `fasta` usando los comandos correspondientes y creen un nuevo archivo de texto con todas las longitudes separadas por coma. Posteriormente obtén el promedio de las secuencias. 
+01. ^ Trabajarán con secuencias crudas del genoma de [Mycoplasma genitalium](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5745988/). Deberán obtenerlas identificando en el artículo, dónde están depositadas. Después de obtenerlas, deberán descargarlas y moverlas a su directorio `data/raw_data`. Deberán crear una liga simbólica de ambos archivos en `data/filtered` y luego descomprimirlos utilizando el comando `gunzip -c archivo.fastq.gz` para conservar el archivo original comprimido. Finalmente usando awk conviertan este archivo de `fastq` a `fasta`.
+02. ^¿Ambos archivos `fasta` tienen la misma cantidad de secuencias? Filtren únicamente el dato de la longitud de las lecturas del archivo `fasta` usando los comandos correspondientes y creen un nuevo archivo de texto con todas las longitudes separadas por coma. Posteriormente obtengan el promedio de las secuencias utilizando cualquier lenguaje de programación de su preferencia. 
 03. Un string de CIGAR de 36M significa que 36 posiciones de la secuencia hacen "match" con el genoma de referencia. Suponiendo que el genoma de referencia tiene un fragmento con la secuencia que se muestra a continuación ¿Cómo se vería el alineamiento? y ¿Cuál sería su CIGAR string?
 
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_08.png)
@@ -169,7 +169,7 @@ Secuencia de referencia:
 Secuencia a comparar:
 `TTAGATAAAGGATACTG`
     
-04. ^Creen una *liga simbólica suave* del archivo `sequence.gff3`, dentro del directorio del equipo ej.  `genomica_2020-2/dinamita_p02/data/filtered`. Utilizando los comandos correspondientes, reporten para la columna tres cuántos reportes hay para cada una de las categorías.
+04. ^Creen una *liga simbólica suave* del archivo `sequence.gff3` -de la práctica anterior-, dentro del directorio del equipo ej.  `genomica_2020-2/dinamita_p02/data/filtered`. Utilizando los comandos correspondientes, anoten para la columna tres cuántos reportes hay para cada una de las categorías.
 
 ## Parte IV. __ / 20
 
@@ -201,4 +201,63 @@ Excellent quality
 
 Hmmmm....Ok.
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_10.png)
+
+**Revisando el [reporte](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)**
+
+* Basic Statistics
+* Per base sequence quality
+* Per tile sequence quality
+* Per sequence quality scores
+* Per base sequence content
+* Per sequence GC content
+* Per base N content
+* Sequence Length Distribution
+* Sequence Duplication Levels
+* Overrepresented sequences
+* Adapter Content
+
+*** 
+
+01. ^Crear un directorio en ej. `dinamita_p02/` llamado `bin/`. Descargar fastqc(https://www.bioinformatics.babraham.ac.uk/projects/download.html) para linea de comandos y descomprimirlo con los comandos adecuados. Asignar permisos de ejecución al archivo fastqc y *volverlo ejecutable* en cualquier lugar de su computadora.
+02. ^Moverse a `data/filtered/` y crear dos ligas simbólicas suaves de las lecturas crudas de  Mycoplasma genitalium. Crear un script de bash `fastqc_run.sh como se indica a continuación -con los nombres correctos de las secuencias- y correrlo.
+
+```
+#!/bin/bash
+
+fastqc file_1.fastq file_2.fastq
+``` 
+03. ^Obtener el archivo `.html` y abrirlo en cualquier buscador. Realicen una breve descripción de los que observan en cada gráfica. 
+04. Calculen la cobertura del genoma dado que `covertura = (cantidad de lecturas*longitud de lecturas) / total del tamaño del genoma (bp)`
+
+## Parte V. __ / 20
+
+**Herramientas de limpieza**
+
+Después de analizar los datos, es posible concluir que es necesario llevar a cabo una “limpieza de adaptadores” o eliminar secuencias sobrerrepresentadas. Existen múltiples herramientas para llevar a cabo esta limpieza de un archivo en formato fastq:
+
+* Usando el script Clean_Adapter.pl (UUSMB)
+* CutAdapt ( https://cutadapt.readthedocs.org/en/stable/ )
+* Condetri ( https://github.com/linneas/condetri )
+* ERNE-filter ( http://erne.sourceforge.net )
+* FASTX-tools ( http://hannonlab.cshl.edu/fastx_toolkit/download.html )
+* PRINTSEQ ( http://prinseq.sourceforge.net )
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_11.png)
+
+También existen más herramientas para hacer [trimming](https://www.biostars.org/p/178647/) de los datos. 
+
+** Remover organelos, sólo si se trata de información genómica**
+
+Esto se puede realizar con un mapeador e información de un genoma mitocondrial o de cloroplasto de una especie filogenéticamente cercana. 
+
+***
+
+01. ^Descarga las secuencias crudas de algún organismo conocido o modelo de tu preferencia y muévelo a  `data/raw_data`. 
+02. Describe qué tecnología de secuenciación fue utilizada
+03. Calcula la cobertura de tu genoma
+04. ^Realiza el resumen del estado de tus secuencias con fastqc en el directorio destinado para esto `data/filtered/fastqc` con sus ligas simbólicas suaves correspondientes.
+05. Discute las gráficas obtenidas. 
+06. ¿Cuál es el valor de phred que utilizan sus datos?
+07. ^Plantea la estrategia adecuada para mejorar las calidades de tus secuencias. Ej. Cortar hasta cierta longitud de bases o phred, remover adaptadores, quitar secuencias sobrerrepresentadas, etc. Incluye el software que utilizarías para hacer esto. Si no es necesario, discute por qué lo consideras así. 
+08. **^Realiza la limpieza de tus secuencias utilizando el software que elegiste. Para correrlo, crea un script para esa tarea ej. `trimmomatic_run.sh`.**
 
