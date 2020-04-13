@@ -246,7 +246,7 @@ Después de analizar los datos, es posible concluir que es necesario llevar a ca
 
 También existen más herramientas para hacer [trimming](https://www.biostars.org/p/178647/) de los datos. 
 
-** Remover organelos, sólo si se trata de información genómica**
+**Remover organelos, sólo si se trata de información genómica**
 
 Esto se puede realizar con un mapeador e información de un genoma mitocondrial o de cloroplasto de una especie filogenéticamente cercana. 
 
