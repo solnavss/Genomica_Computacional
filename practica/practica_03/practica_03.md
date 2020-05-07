@@ -33,11 +33,11 @@ Los comandos y outputs de los ejercicios marcados **(Ej. 1. ^)** en el archivo `
 
 Un alineamiento es un proceso que recibe como datos de entrada un conjunto secuencias en formato `fastq`, generadas por alguna metodología de secuenciación masiva, y un archivo de referencia (genoma completo, transcritos, etc) en formato `fasta`. *El objetivo del alineamiento es localizar la posición donde se encuentra la máxima semejanza entre cada una de las secuencias cortas respecto a la referencia.* En este sentido, es importante mencionar que existe la posibilidad de encontrar más de una solución y que la complejidad es grande dado el tamaño de los archivos de entrada. *En términos generales, el resultado del alineamiento será la posición en la que cada secuencia alinea con respecto a la referencia o un asterisco en caso de no alinear y el formato de salida más utilizado en el que se reporta el resultado es BAM/SAM.* 
 
-* **Alineamiento local**
+* **Alineamiento local** = encuentra regiones de similitud en partes de las secuencias 
 
 Los **alineamientos locales** identifican regiones similares dentro de largas secuencias que normalmente son muy divergentes entre sí. A menudo se prefieren los alineamientos locales, pero pueden ser más difíciles de calcular porque se añade el desafío de identificar las regiones de mayor similitud.
 
-* **Alineamiento global**
+* **Alineamiento global** = encuentra el mejor alineamiento a través de las dos secuencias completas 
 
 Calcular un **alineamiento global** es una forma de optimización global que forza al alineamiento a ocupar la longitud total de todas las secuencias introducidas (secuencias problema). Una estrategia general de alineamiento global es el algoritmo Needleman-Wunsch basado en programación dinámica.
 
@@ -47,9 +47,7 @@ Un diagrama de trabajo nos indicaría como primer paso la selección de nuestra 
 
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_01.png)
 
-Existen muchos programas para alinear (mapear), la mayoría son software libre. 
-
-Por ejemplo: Bowtie, Bowtie2, SMALT, MAQ, BWA, SOAP2, SHRIMP, BFAST, Eland, etc.
+Existen muchos programas para alinear (mapear), la mayoría son software libre. Por ejemplo: `Bowtie`, `Bowtie2`, `SMALT`, `MAQ`, `BWA`, `SOAP2`, `SHRIMP`, `BFAST`, `Eland`, etc.
 
 ¿Cuál es el mejor? ¿Cuál utilizar? Esto dependerá de los siguientes criterios:
 
