@@ -42,3 +42,22 @@ Los **alineamientos locales** identifican regiones similares dentro de largas se
 Calcular un **alineamiento global** es una forma de optimización global que forza al alineamiento a ocupar la longitud total de todas las secuencias introducidas (secuencias problema). Una estrategia general de alineamiento global es el algoritmo Needleman-Wunsch basado en programación dinámica.
 
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_03/tres_01.jpg)
+
+Un diagrama de trabajo nos indicaría como primer paso la selección de nuestra **referencia** y una vez con esta utilizamos alguno(s) de los programas existentes para hacer el alineamiento (mapeo) de secuencias sobre la referencia. La mayoría de los alineadores de secuencias inician con un proceso de generación de un **índice** que no es otra cosa que la creación de un *“diccionario”* para buscar las distintas secuencias.
+
+Existen muchos programas para alinear (mapear), la mayoría son software libre. 
+
+Por ejemplo: Bowtie, Bowtie2, SMALT, MAQ, BWA, SOAP2, SHRIMP, BFAST, Eland, etc.
+
+¿Cuál es el mejor? ¿Cuál utilizar? Esto dependerá de los siguientes criterios:
+
+• Tipo de datos
+• Tiempo de procesamiento
+• Recursos (hardware) que consume
+• Precisión
+• Sensibilidad
+• Otros
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_03/tres_02.jpg)
+
+
