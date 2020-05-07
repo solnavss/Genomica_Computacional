@@ -58,6 +58,6 @@ Por ejemplo: Bowtie, Bowtie2, SMALT, MAQ, BWA, SOAP2, SHRIMP, BFAST, Eland, etc.
 • Sensibilidad
 • Otros
 
-![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_03/tres_02.jpg)
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_03/tres_02.png)
 
 
