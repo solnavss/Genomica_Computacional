@@ -1,7 +1,7 @@
 # Genómica Computacional: Grupo 7075, Semestre 2020-2
 ## Práctica 03 - Genómica y Filogenómica (Entrega: 15.05.20/23:59)
 
-**Indicaciones:** La práctica esta compuesta de dos partes con ejercicios. Deberán resolver **de manera individual** los ejercicios conforme se indique y anotar los comandos y respuestas que se piden en un archivo tipo [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) `practica_03.md`. Es responsabilidad de los alumnos subir el directorio correspondiente a su cuenta de [git](https://github.com/) y corroborar que se encuentre toda la información que se les pidió. Así mismo, tendrán que enviar vía [Google Classroom](https://classroom.google.com/) la liga a la cuenta de `git` donde se realizó la práctica antes de que cierre la asignación **(15.05.20/23:59)**. **Nota:** Si existen dudas al respecto de la práctica, favor de escribir a mi correo. **Estaré respondiendo dudas a más tardar el viernes 15.05.20 a las 11:59.**
+**Indicaciones:** La práctica esta compuesta de cuatro partes con ejercicios. Deberán resolver **de manera individual** los ejercicios conforme se indique y anotar los comandos y respuestas que se piden en un archivo tipo [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) `practica_03.md`. Es responsabilidad de los alumnos subir el directorio correspondiente a su cuenta de [git](https://github.com/) y corroborar que se encuentre toda la información que se les pidió. Así mismo, tendrán que enviar vía [Google Classroom](https://classroom.google.com/) la liga a la cuenta de `git` donde se realizó la práctica antes de que cierre la asignación **(15.05.20/23:59)**. **Nota:** Si existen dudas al respecto de la práctica, favor de escribir a mi correo. **Estaré respondiendo dudas a más tardar el viernes 15.05.20 a las 11:59.**
 
 ***
 
@@ -27,7 +27,7 @@ Los comandos y outputs de los ejercicios marcados **(Ej. 1. ^)** en el archivo `
 ...
 ```
 
-## Parte I. __ / 25
+## Parte I. __ / 30
 
 **Alineamientos**
 
@@ -77,7 +77,7 @@ Dentro de los programas más utilizados, se encuentran dos algoritmos para hacer
 02. Existen diferentes programas/tipos de BLAST por ejemplo: `blastn` es que utilizaste en el ejemplo anterior. Realiza una tabla de tres columnas donde indiques `BLAST`-tipo de BLAST-, `Definición`-en qué consiste-, `Aplicación`-para qué tipo de análisis lo usarías-.
 03. Realiza la búsqueda de un artículo científico de tu interés dónde utilicen software específico de mapeo. Describe en un breve párrafo la metodología que utilizaron para realizar el mapeo. No olvides incluir la referencia del artículo.
 
-## Parte II. __ / 25
+## Parte II. __ / 30
 
 Las estrategias de secuenciación consisten en la **fragmentación** al azar del genoma para obtener fragmentos de uno o varios tamaños para poder obtener lecturas o reads ya sea de cada extremo de la molécula para su posterior reconstrucción.
 
@@ -146,5 +146,3 @@ secuencias.
 01. Explica:¿En qué consiste el problema de los puentes de la ciudad de Königsberg? ¿Por qué no tiene solución? Puedes consultar material libremente, para comenzar puedes ver el siguiente [video](https://www.youtube.com/watch?v=nZwSo4vfw6c).
 02. Para profundizar en el tema de OLC y De Bruijin Graphs, consulta el siguiente artículo [How to apply de Bruijn graphs to genome assembly](https://www.researchgate.net/publication/51784417_How_to_apply_de_Bruijn_graphs_to_genome_assembly) y explica tres problemáticas comunes en la aplicación de las gráficas de Bruijin a genomas.    
 03. Explica ¿qué son? ¿en qué consisten? y ¿para qué se usan? las estadísticas N50 y L50.
-
-
