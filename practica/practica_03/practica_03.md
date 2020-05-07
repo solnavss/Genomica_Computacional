@@ -73,9 +73,9 @@ Un `k-mero` es una palabra de tamaño k. Debemos saber que `N-k+1` sería el tot
 Dentro de los programas más utilizados, se encuentran dos algoritmos para hacer estos índices, el de **hashing** que se define como la transformación de una cadena de caracteres en un valor que suele ser más corto de longitud (un k mero) y que sirve para representar la cadena original. Esto nos permitirá entender las transformadas de `Burrow-Wheeler (TBW)`, que es un algoritmo usado en técnicas de compresión de datos. Ambos algoritmos tienen sus fortalezas, los programas que utilizan las TBW como `BWA` y `Bowtie`, suelen ser más rápidos en la búsqueda de **matches** exactos. Por otro lado el programa `SMALT` que utiliza **hashing** es un poco más lento y requiere de mayor cantidad de memoria RAM, sin embargo es menos sensible a regiones repetidas y tolera mejor la variabilidad entre los genomas.
 
 *** 
-01. ^BLAST es una herramienta que busca alinear segmentos de secuencias en lugar de toda la secuencia, es capaz de detectar relaciones entre secuencias que comparten regiones aisladas de similitud. Ingresa a [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) (Basic Local Alignment Search Tool) de NCBI. Realiza un alineamiento de nucleótidos e identifica la secuencia problema `sequence_x.fasta` puedes subirla como archivo o copiarla directamente. Responde: 1.1 ¿A qué organismo pertenece? 1.2 ¿Es un gen o una región genómica de importancia? 1.3 ¿Qué es un marcador molecular? 1.4 ¿Cuál es la importancia de este tipo de marcador en particular?      
-02. ^Existen diferentes programas/tipos de BLAST por ejemplo: `blastn` es que utilizaste en el ejemplo anterior. Realiza una tabla de tres columnas donde indiques `BLAST`-tipo de BLAST-, `Definición`-en qué consiste-, `Aplicación`-para qué tipo de análisis lo usarías-.
-03. ^Realiza la búsqueda de un artículo científico de tu interés dónde utilicen software específico de mapeo. Describe en un breve párrafo la metodología que utilizaron para realizar el mapeo. No olvides incluir la referencia del artículo.
+01. BLAST es una herramienta que busca alinear segmentos de secuencias en lugar de toda la secuencia, es capaz de detectar relaciones entre secuencias que comparten regiones aisladas de similitud. Ingresa a [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) (Basic Local Alignment Search Tool) de NCBI. Realiza un alineamiento de nucleótidos e identifica la secuencia problema `sequence_x.fasta` puedes subirla como archivo o copiarla directamente. Responde: 1.1 ¿A qué organismo pertenece? 1.2 ¿Es un gen o una región genómica de importancia? 1.3 ¿Qué es un marcador molecular? 1.4 ¿Cuál es la importancia de este tipo de marcador en particular?      
+02. Existen diferentes programas/tipos de BLAST por ejemplo: `blastn` es que utilizaste en el ejemplo anterior. Realiza una tabla de tres columnas donde indiques `BLAST`-tipo de BLAST-, `Definición`-en qué consiste-, `Aplicación`-para qué tipo de análisis lo usarías-.
+03. Realiza la búsqueda de un artículo científico de tu interés dónde utilicen software específico de mapeo. Describe en un breve párrafo la metodología que utilizaron para realizar el mapeo. No olvides incluir la referencia del artículo.
 
 ## Parte II. __ / 25
 
@@ -135,7 +135,13 @@ secuencias.
 * La ploidía del organismo. Las poliploidías hacen aún más problemático los ensambles.
 * Probar varios tamaños de k-meros en aquellos ensambladores basados en gráficas de de Bruijn.
 
+**Comparando ensambles**
 
-(https://www.youtube.com/watch?v=nZwSo4vfw6c)
+*In computational biology, N50 and L50 are statistics of a set of contig or scaffold lengths. The N50 is similar to a mean or median of lengths, but has greater weight given to the longer contigs. It is used widely in genome assembly, especially in reference to contig lengths within a draft assembly. L50 is the number of contigs whose summed length is N50.*
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_03/tres_10.png)
+
+01. Explica:¿En qué consiste el problema de los puentes de la ciudad de Königsberg? ¿Por qué no tiene solución? Puedes consultar material libremente, para comenzar puedes ver el siguiente [video](https://www.youtube.com/watch?v=nZwSo4vfw6c).
+02. Para profundizar en el tema de OLC y De Bruijin Graphs, consulta el siguiente artículo [How to apply de Bruijn graphs to genome assembly](https://www.researchgate.net/publication/51784417_How_to_apply_de_Bruijn_graphs_to_genome_assembly) y explica tres problemáticas comunes en la aplicación de las gráficas de Bruijin en genomas.    
 
 
