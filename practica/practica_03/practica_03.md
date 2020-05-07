@@ -60,4 +60,15 @@ Existen muchos programas para alinear (mapear), la mayoría son software libre. 
 
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_03/tres_02.png)
 
+A grandes rasgos, buscar regiones idénticas entre cadenas de texto pudiera parecer una tarea sencilla y rápida. Sin embargo el volumen de datos generados con las nuevas tecnologías (plataformas) de secuenciación masiva y los problemas con los que deben de lidiar estos algoritmos como son: inserciones o ausencias de bases en nuestras secuencias o en la referencia, bases diferentes, y las regiones repetidas, hacen de esta búsqueda de identidad algo complejo algorítmicamente y por lo tanto computacionalmente. 
+
+Para entender como funcionas estos algoritmos es necesario entender un concepto que todos estos programas manejan.
+
+**¿Qué es un k-mero?**
+
+Un `k-mero` es una palabra de tamaño k. Debemos saber que `N-k+1` sería el total de palabras contenidas en un `read` de longitud N. Por otro lado, la importancia de estos es la velocidad con la que nos permite reconstruir las palabras, estos nos permitirán conectar reads de una manera más eficiente. La mayoría de los algoritmos de alineamientos funcionan haciendo primero un **índice** (con estructura de árbol) de la **referencia** con la queremos trabajar. Esto con la finalidad de que la búsqueda de nuestras lecturas pueda ser de manera rápida, aunque algunas veces parcial, necesitando de programación dinámica para comprobar la posición exacta de la lectura. 
+
+Dentro de los programas más utilizados, se encuentran dos algoritmos para hacer estos índices, el de **hashing** que se define como la transformación de una cadena de caracteres en un valor que suele ser más corto de longitud (un k mero) y que sirve para representar la cadena original. Esto nos permitirá entender las transformadas de `Burrow-Wheeler (TBW)`, que es un algoritmo usado en técnicas de compresión de datos. Ambos algoritmos tienen sus fortalezas, los programas que utilizan las TBW como `BWA` y `Bowtie`, suelen ser más rápidos en la búsqueda de **matches** exactos. Por otro lado el programa `SMALT` que utiliza **hashing** es un poco más lento y requiere de mayor cantidad de memoria RAM, sin embargo es menos sensible a regiones repetidas y tolera mejor la variabilidad entre los genomas.
+
+
 
