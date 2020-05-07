@@ -1,7 +1,7 @@
 # Genómica Computacional: Grupo 7075, Semestre 2020-2
 ## Práctica 03 - Genómica y Filogenómica (Entrega: 15.05.20/23:59)
 
-**Indicaciones:** La práctica esta compuesta de dos partes con ejercicios. Deberán resolver **de manera individual** los ejercicios conforme se indique y anotar los comandos y respuestas que se piden en un archivo tipo [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) `.md`. Es responsabilidad de los alumnos subir el directorio correspondiente a su cuenta de [git](https://github.com/) y corroborar que se encuentre toda la información que se les pidió. Así mismo, tendrán que enviar vía [Google Classroom](https://classroom.google.com/) la liga a la cuenta de `git` donde se realizó la práctica antes de que cierre la asignación **(15.05.20/23:59)**. **Nota:** Si existen dudas al respecto de la práctica, favor de escribir a mi correo. **Estaré respondiendo dudas a más tardar el viernes 15.05.20 a las 11:59.**
+**Indicaciones:** La práctica esta compuesta de dos partes con ejercicios. Deberán resolver **de manera individual** los ejercicios conforme se indique y anotar los comandos y respuestas que se piden en un archivo tipo [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) `practica_03.md`. Es responsabilidad de los alumnos subir el directorio correspondiente a su cuenta de [git](https://github.com/) y corroborar que se encuentre toda la información que se les pidió. Así mismo, tendrán que enviar vía [Google Classroom](https://classroom.google.com/) la liga a la cuenta de `git` donde se realizó la práctica antes de que cierre la asignación **(15.05.20/23:59)**. **Nota:** Si existen dudas al respecto de la práctica, favor de escribir a mi correo. **Estaré respondiendo dudas a más tardar el viernes 15.05.20 a las 11:59.**
 
 ***
 
@@ -19,7 +19,7 @@ Los comandos y outputs de los ejercicios marcados **(Ej. 1. ^)** en el archivo `
 ## Nombre y Apellidos
 
 ## Parte I. 
-01. [comando] [opciones] [argumentos]
+01. Tabla
 02. [comando] [opciones] [argumentos]
 …
 
@@ -71,5 +71,10 @@ Un `k-mero` es una palabra de tamaño k. Debemos saber que `N-k+1` sería el tot
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_03/tres_03.png)
 
 Dentro de los programas más utilizados, se encuentran dos algoritmos para hacer estos índices, el de **hashing** que se define como la transformación de una cadena de caracteres en un valor que suele ser más corto de longitud (un k mero) y que sirve para representar la cadena original. Esto nos permitirá entender las transformadas de `Burrow-Wheeler (TBW)`, que es un algoritmo usado en técnicas de compresión de datos. Ambos algoritmos tienen sus fortalezas, los programas que utilizan las TBW como `BWA` y `Bowtie`, suelen ser más rápidos en la búsqueda de **matches** exactos. Por otro lado el programa `SMALT` que utiliza **hashing** es un poco más lento y requiere de mayor cantidad de memoria RAM, sin embargo es menos sensible a regiones repetidas y tolera mejor la variabilidad entre los genomas.
+
+*** 
+01. ^BLAST es una herramienta que busca alinear segmentos de secuencias en lugar de toda la secuencia, es capaz de detectar relaciones entre secuencias que comparten regiones aisladas de similitud. Ingresa a [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) (Basic Local Alignment Search Tool) de NCBI. Realiza un alineamiento de nucleótidos e identifica la secuencia problema `sequence_x.fasta` puedes subirla como archivo o copiarla directamente. Responde: 1.1 ¿A qué organismo pertenece? 1.2 ¿Es un gen o una región genómica de importancia? 1.3 ¿Qué es un marcador molecular? 1.4 ¿Cuál es la importancia de este tipo de marcador en particular?      
+02. ^Existen diferentes programas/tipos de BLAST por ejemplo: `blastn` es que utilizaste en el ejemplo anterior. Realiza una tabla de tres columnas donde indiques `BLAST`-tipo de BLAST-, `Definición`-en qué consiste-, `Aplicación`-para qué tipo de análisis lo usarías-.
+03. ^Realiza la búsqueda de un artículo científico de tu interés dónde utilicen software específico de mapeo. Describe en un breve párrafo la metodología que utilizaron para realizar el mapeo. No olvides incluir la referencia del artículo.
 
 
