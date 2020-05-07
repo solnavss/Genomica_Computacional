@@ -51,17 +51,12 @@ Existen muchos programas para alinear (mapear), la mayoría son software libre. 
 
 ¿Cuál es el mejor? ¿Cuál utilizar? Esto dependerá de los siguientes criterios:
 
-• Tipo de datos
-
-• Tiempo de procesamiento
-
-• Recursos (hardware) que consume
-
-• Precisión
-
-• Sensibilidad
-
-• Otros
+* Tipo de datos
+* Tiempo de procesamiento
+* Recursos (hardware) que consume
+* Precisión
+* Sensibilidad
+* Otros
 
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_03/tres_02.png)
 
