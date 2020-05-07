@@ -33,11 +33,11 @@ Los comandos y outputs de los ejercicios marcados **(Ej. 1. ^)** en el archivo `
 
 Un alineamiento es un proceso que recibe como datos de entrada un conjunto secuencias en formato `fastq`, generadas por alguna metodología de secuenciación masiva, y un archivo de referencia (genoma completo, transcritos, etc) en formato `fasta`. *El objetivo del alineamiento es localizar la posición donde se encuentra la máxima semejanza entre cada una de las secuencias cortas respecto a la referencia.* En este sentido, es importante mencionar que existe la posibilidad de encontrar más de una solución y que la complejidad es grande dado el tamaño de los archivos de entrada. *En términos generales, el resultado del alineamiento será la posición en la que cada secuencia alinea con respecto a la referencia o un asterisco en caso de no alinear y el formato de salida más utilizado en el que se reporta el resultado es BAM/SAM.* 
 
-x **Alineamiento local**
+* **Alineamiento local**
 
 Los **alineamientos locales** identifican regiones similares dentro de largas secuencias que normalmente son muy divergentes entre sí. A menudo se prefieren los alineamientos locales, pero pueden ser más difíciles de calcular porque se añade el desafío de identificar las regiones de mayor similitud.
 
-x **Alineamiento global**
+* **Alineamiento global**
 
 Calcular un **alineamiento global** es una forma de optimización global que forza al alineamiento a ocupar la longitud total de todas las secuencias introducidas (secuencias problema). Una estrategia general de alineamiento global es el algoritmo Needleman-Wunsch basado en programación dinámica.
 
