@@ -1,7 +1,7 @@
 # Genómica Computacional: Grupo 7075, Semestre 2020-2
-## Práctica 02 - Análisis de datos de Secuenciación Masiva (Entrega: 20.04.20/23:59)
+## Práctica 02 - Análisis de datos de Secuenciación Masiva (Entrega: 27.04.20/23:59)
 
-**Indicaciones:** La práctica esta compuesta de cinco partes con ejercicios para repasar algunos comandos de bash, manejo de secuencias, algunos formatos particulares (`.fna`, `.fasta`, `.gff3`, `.faa` y `.fastqc`) y uso de software específico. Deberán resolver **en equipos** los ejercicios conforme se indique y anotar los comandos que se piden en un archivo tipo [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) `.md`. Es responsabilidad de los alumnos subir el directorio correspondiente a su cuenta de [git](https://github.com/) y corroborar que se encuentre toda la información que se les pidió. Así mismo, tendrán que enviar vía [Google Classroom](https://classroom.google.com/) la liga a la cuenta de `git` donde se realizó la práctica antes de que cierre la asignación **(20.04.20/23:59)**. **Nota:** Si existen dudas al respecto de la práctica, favor de escribir a mi correo. **Estaré respondiendo dudas a más tardar el lunes 20.04.20 a las 11:59.**
+**Indicaciones:** La práctica esta compuesta de cinco partes con ejercicios para repasar algunos comandos de bash, manejo de secuencias, algunos formatos particulares (`.fna`, `.fasta`, `.gff3`, `.faa` y `.fastqc`) y uso de software específico. Deberán resolver **en equipos** los ejercicios conforme se indique y anotar los comandos que se piden en un archivo tipo [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) `.md`. Es responsabilidad de los alumnos subir el directorio correspondiente a su cuenta de [git](https://github.com/) y corroborar que se encuentre toda la información que se les pidió. Así mismo, tendrán que enviar vía [Google Classroom](https://classroom.google.com/) la liga a la cuenta de `git` donde se realizó la práctica antes de que cierre la asignación **(27.04.20/23:59)**. **Nota:** Si existen dudas al respecto de la práctica, favor de escribir a mi correo. **Estaré respondiendo dudas a más tardar el lunes 27.04.20 a las 11:59.**
 
 ***
 
@@ -246,7 +246,7 @@ Después de analizar los datos, es posible concluir que es necesario llevar a ca
 
 También existen más herramientas para hacer [trimming](https://www.biostars.org/p/178647/) de los datos. 
 
-** Remover organelos, sólo si se trata de información genómica**
+**Remover organelos, sólo si se trata de información genómica**
 
 Esto se puede realizar con un mapeador e información de un genoma mitocondrial o de cloroplasto de una especie filogenéticamente cercana. 
 
