@@ -77,4 +77,24 @@ Dentro de los programas más utilizados, se encuentran dos algoritmos para hacer
 02. ^Existen diferentes programas/tipos de BLAST por ejemplo: `blastn` es que utilizaste en el ejemplo anterior. Realiza una tabla de tres columnas donde indiques `BLAST`-tipo de BLAST-, `Definición`-en qué consiste-, `Aplicación`-para qué tipo de análisis lo usarías-.
 03. ^Realiza la búsqueda de un artículo científico de tu interés dónde utilicen software específico de mapeo. Describe en un breve párrafo la metodología que utilizaron para realizar el mapeo. No olvides incluir la referencia del artículo.
 
+## Parte II. __ / 25
+
+Las estrategias de secuenciación consisten en la **fragmentación** al azar del genoma para obtener fragmentos de uno o varios tamaños para poder obtener lecturas o reads ya sea de cada extremo de la molécula para su posterior reconstrucción.
+
+Un `read` es una lectura obtenida de un fragmento de DNA o de cDNA a partir de moléculas de RNA. Con las tecnologías de secuenciación se puede determinar el orden de los nucleótidos de una o varias moléculas de DNA ya sean por uno o ambos lados. *El tamaño del fragmento dependerá en gran medida del tipo de análisis y tecnología de secuenciación que utilicemos.*
+
+Por ejemplo, la secuenciación tipo Sanger, dependía de que los fragmentos fueran primero puestos en un vector de clonación por dos principales razones: 
+
+* El vector contiene secuencias que nos permiten insertar fragmentos de DNA en una región cuya secuencia es conocida y así iniciar el proceso de secuenciación.
+* Permite “amplificar” y preservar el fragmento dentro de un organismo hospedero como lo es una bacteria. 
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_03/tres_04.png)
+
+En las tecnologías de segunda y tercera generación, no se requieren ni de vectores ni de hospederos para la manipulación de los fragmentos a secuenciar. Sin embargo, existe un límite de tamaño dependiendo de las tecnologías de segunda generación principlamente. 
+
+Por ejemplo, `Illumina`, `454` y `Ion Torrent`, tienen un límite de aproximadamente 1,000 pares de bases y en el caso de las últimas dos tecnologías, no es posible realizar la secuenciación por ambos lados a menos que se utilice un protocolo especial llamado **mate pair**. Para obtener lecturas mate pair, se requieren de fragmentos mayores a 2,000 pares de bases los cuales son circularizados uniendo los extremos con una secuencia especial que permite seleccionar dicha región del círculo después de un proceso de fragmentación. Este tipo de reads son extremadamente útiles para unir fragmentos reconstruidos o `contigs` y darle una mayor continuidad y orientación al genoma.
+
+Un `contig` se define como la representación de un set de reads que sobrelapan y que constituyen el consenso de una región de DNA secuenciada. Como se mencionó antes, estos contigs pueden ser comunicados o unidos en fragmentos aún más grandes gracias a las secuencias con paridad como las secuencias mate pair. A estos fragmentos más grandes se les llama `scaffolds` y son contigs unidos por Ns que según el código IUPAC, representa cualquier nucleótido. El número de Ns corresponderá a la distancia que existe entre dos contigs, que a su vez está determinada por el tamaño del fragmento (circulo) que se eligió.
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_03/tres_05.png)
 
