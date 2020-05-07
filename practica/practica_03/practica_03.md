@@ -45,6 +45,8 @@ Calcular un **alineamiento global** es una forma de optimización global que for
 
 Un diagrama de trabajo nos indicaría como primer paso la selección de nuestra **referencia** y una vez con esta utilizamos alguno(s) de los programas existentes para hacer el alineamiento (mapeo) de secuencias sobre la referencia. La mayoría de los alineadores de secuencias inician con un proceso de generación de un **índice** que no es otra cosa que la creación de un *“diccionario”* para buscar las distintas secuencias.
 
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_02/dos_01.png)
+
 Existen muchos programas para alinear (mapear), la mayoría son software libre. 
 
 Por ejemplo: Bowtie, Bowtie2, SMALT, MAQ, BWA, SOAP2, SHRIMP, BFAST, Eland, etc.
