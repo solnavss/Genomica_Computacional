@@ -141,6 +141,8 @@ secuencias.
 
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_03/tres_10.png)
 
+***
+
 01. Explica:¿En qué consiste el problema de los puentes de la ciudad de Königsberg? ¿Por qué no tiene solución? Puedes consultar material libremente, para comenzar puedes ver el siguiente [video](https://www.youtube.com/watch?v=nZwSo4vfw6c).
 02. Para profundizar en el tema de OLC y De Bruijin Graphs, consulta el siguiente artículo [How to apply de Bruijn graphs to genome assembly](https://www.researchgate.net/publication/51784417_How_to_apply_de_Bruijn_graphs_to_genome_assembly) y explica tres problemáticas comunes en la aplicación de las gráficas de Bruijin en genomas.    
 
