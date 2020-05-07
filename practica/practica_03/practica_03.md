@@ -98,3 +98,44 @@ Un `contig` se define como la representación de un set de reads que sobrelapan 
 
 ![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_03/tres_05.png)
 
+**Overlap-Layout-Consensus**
+
+Este método es un método para reconstruir genomas o bien, ensamblarlos *de novo*. Esto quiere decir que no conocemos el orden ni la relación entre las secuencias obtenidas para un organismo y no existe un genoma de referencia que podamos usar para orientar y ubicar las secuencias. Por lo tanto, es necesario calcular todos los sobrelapes (“overlaps”) posibles entre los reads alineando todos contra todos. La parte del “layout” consiste en localizar y ordenar todos los reads que presentaron un sobrelape. Finalmente, se determina la secuencia consenso (“consensus”) uniendo todos los reads alineados. Si existe información de reads pareados o “mate pair” se puede realizar el “scaffolding”.
+
+Como se puede suponer, el calcular todos los alineamientos posibles, no es computacionalmente eficiente, por lo que se requieren de métodos heurísticos que suponen o explorar una buena cantidad de los alineamientos posibles, pero no todos. Por lo tanto, esto implica errores en el ensamblado. Además, existirán secuencias repetitivas que dificulten los pasos del “layout” y el consenso generando también errores.
+
+**Teoría de gráficas**
+
+La teoría de gráficas es muy conveniente para solucionar el problema del ensamblado *de novo*, debido a que simplifica la parte del “layout”. Sin embargo, su mayor utilidad es en el ensamble de datos de secuenciación masiva, debido a que debido al gran volumen de datos generados, sería imposible buscar todos los sobrelapes posibles entre los reads y aún más dado la longitud de las secuencias y la probabilidad de encontrar varios sobrelapes incorrectos. 
+
+La teoría de gráficas surge a raiz de un problema matemático abordado por Leonhard Euler en 1736 donde trato de encontrar la manera de caminar a través de la ciudad de Königsberg en Prusia (actualmente Kaliningrado, Rusia) donde se tienen dos grandes islas que están conectadas por 7 puentes. Se requeria encontrar una ruta donde se pudiera pasar por la ciudad cruzando cada puente una solo una vez y que el punto inicial no fuera el mismo que el punto final.
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_03/tres_06.png)
+
+A pesar de que el problema en si no tiene solución, este fue el primer teorema de teoría de graficas por lo que inspiró a otros trabajos como el de Nicolaas Govert de Bruijn (pronunciado “bruaien”), el cual es utilizado para el ensamble de genomas u transcriptomas.
+
+Un **ensamble genómico** consiste en tomar una colección de secuencias (lecturas mucho más cortas) y reconstruir con estas la secuencia del genoma del cual fueron originadas. 
+
+Una buena señal de la calidad de nuestras secuencias y la calidad de nuestro ensamble final es el poder localizar de vuelta la mayor cantidad de las lecturas de entrada sobre el resultado del ensamble, además de ser localizados en la orientación y distancia esperada. Otra señal de la calidad de nuestro ensamble es la cantidad de fragmentos en los que quede, en la mayoría de los ensambladores obtenemos finalmente fragmentos que llamaremos `contigs` (regiones contiguas de lecturas), en otros llegaremos a nivel de scaffolds o supercontigs (conjuntos de contigs que se colocan en orden y sentido entre ellos).
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_03/tres_07.png)
+
+Programas para realizar ensambles genómicos:
+
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_03/tres_08.png)
+![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_03/tres_09.png)
+
+Consideraciones para casi todos los ensambladores:
+
+* Asegurarse de realizar un control de calidad de las lecturas antes de ser ensambladas.
+* De ser posible, verificar el tamaño de inserto de las librerías.
+* Genomas con mayor cantidad y longitud de regiones con secuencias repetitivas, requieren mayor longitud de lecturas y mayor tamaño de inserto de librerías pareadas.
+* Regiones repetitivas implicarán una mayor cantidad de alineamientos incorrectos en las
+secuencias.
+* La ploidía del organismo. Las poliploidías hacen aún más problemático los ensambles.
+* Probar varios tamaños de k-meros en aquellos ensambladores basados en gráficas de de Bruijn.
+
+
+(https://www.youtube.com/watch?v=nZwSo4vfw6c)
+
+
