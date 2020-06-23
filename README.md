@@ -12,6 +12,7 @@ El objetivo del curso es integrar conceptos desde diferentes áreas (Biología, 
 
 Consistirán en resolver un conjunto de prácticas que nosotros les proporcionaremos. Tendrán una a dos semanas para trabajar en ellas. Se espera que cada estudiante avance fuera de la clase y que en las sesiones de los lunes se discuta al respecto de las estrategias empleadas para la resolución de los problemas. Al finalizar la práctica, cada estudiante deberá entregar un reporte escrito cuyas especificaciones se las haremos llegar al inicio de cada práctica. La mayoría de las prácticas se llevarán a cabo utilizando Bash y Python. 
 
+
 + *Práctica 1. Manejo de datos de secuenciación masiva (Bash)* 
 
 + *Práctica 2. Herramientas bioinformáticas (Python)*
@@ -22,4 +23,5 @@ Consistirán en resolver un conjunto de prácticas que nosotros les proporcionar
 
 + *Práctica 5. Análisis de datos genómicos, Parte III: Filogenómica*
 
-Saludos, Profesores de la clase de Genómica Computacional 2020-2
+
+Saludos, Profesores de la clase de Genómica Computacional 2020-2.
