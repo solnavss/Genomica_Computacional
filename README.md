@@ -12,13 +12,13 @@ El objetivo del curso es integrar conceptos desde diferentes áreas (Biología, 
 
 Consistirán en resolver un conjunto de prácticas que nosotros les proporcionaremos. Tendrán una a dos semanas para trabajar en ellas. Se espera que cada estudiante avance fuera de la clase y que en las sesiones de los lunes se discuta al respecto de las estrategias empleadas para la resolución de los problemas. Al finalizar la práctica, cada estudiante deberá entregar un reporte escrito cuyas especificaciones se las haremos llegar al inicio de cada práctica. La mayoría de las prácticas se llevarán a cabo utilizando Bash y Python. 
 
-*Práctica 1. Manejo de datos de secuenciación masiva (Bash) 
+*Práctica 1. Manejo de datos de secuenciación masiva (Bash)* 
 
-*Práctica 2. Herramientas bioinformáticas (Python)
+*Práctica 2. Herramientas bioinformáticas (Python)*
 
-*Práctica 3. Análisis de datos genómicos, Parte I: Calidad
+*Práctica 3. Análisis de datos genómicos, Parte I: Calidad*
 
-*Práctica 4. Análisis de datos genómicos, Parte II: Mapeo y Ensamble 
+*Práctica 4. Análisis de datos genómicos, Parte II: Mapeo y Ensamble* 
 
-*Práctica 5. Análisis de datos genómicos, Parte III: Filogenómica
+*Práctica 5. Análisis de datos genómicos, Parte III: Filogenómica*
 
