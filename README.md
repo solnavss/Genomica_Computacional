@@ -8,7 +8,7 @@ Utilizaremos este medio para compartir material relacionado a las actividades de
 
 El objetivo del curso es integrar conceptos desde diferentes áreas (Biología, Computación y Matemáticas) y abordar el enfoque interdisciplinario que caracteriza a la Genómica Computacional. 
 
-+ **Sesiones prácticas**
+**Sesiones prácticas**
 
 Consistirán en resolver un conjunto de prácticas que nosotros les proporcionaremos. Tendrán una a dos semanas para trabajar en ellas. Se espera que cada estudiante avance fuera de la clase y que en las sesiones de los lunes se discuta al respecto de las estrategias empleadas para la resolución de los problemas. Al finalizar la práctica, cada estudiante deberá entregar un reporte escrito cuyas especificaciones se las haremos llegar al inicio de cada práctica. La mayoría de las prácticas se llevarán a cabo utilizando Bash y Python. 
 
