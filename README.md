@@ -22,4 +22,4 @@ Consistirán en resolver un conjunto de prácticas que nosotros les proporcionar
 
 + *Práctica 5. Análisis de datos genómicos, Parte III: Filogenómica*
 
-Saludos, Profesores de la clase de Genómica Computacional 2020-2.
+Saludos, Profesores de la clase de Genómica Computacional 2021-1.
