@@ -1,1 +1,1 @@
-# Práctica 2. Herramientas bioinformáticas (Python)
+# Práctica 2. Herramientas para Bioinformática (Python)
