@@ -55,4 +55,4 @@ Previo a la inferencia filogenética utilizando secuencias moleculares, los car
 
 Utilizando el alineamiento de las secuencias de nucleótidos de la `pregunta_3nt.fasta`, así como la función kaks del paquete seqinr en R. ¿Se podría decir que el gen considerado se encuentra sujeto a selección positiva, selección purificadora o evolución neutral?
 
-# Por: Juan A. Arias Del Angel y Marisol Navarro Miranda 
+### Por: Juan A. Arias Del Angel y Marisol Navarro Miranda 
