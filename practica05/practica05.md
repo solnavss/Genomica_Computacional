@@ -1,6 +1,6 @@
 # Práctica 5. Análisis de Datos Genómicos, Parte III: Evolución e Inferencia Filogenética
-## Licenciatura en Ciencias de la Computación, Facultad de Ciencias - UNAM
-Juan A. Arias Del Angel y Marisol Navarro Miranda 
+Juan A. Arias Del Angel y Marisol Navarro Miranda
+## Licenciatura en Ciencias de la Computación, Facultad de Ciencias - UNAM 
 
 **Indicaciones:** La práctica esta compuesta de cuatro partes con ejercicios para repasar los temas vistos en clase. La práctica se deberán resolver de manera **individual**. Es responsabilidad del alumno subir el directorio correspondiente a la práctica a su cuenta de [git](https://github.com/) y corroborar que se encuentre toda la información que se le pidió. Así mismo, tendrán que enviar vía [Google Classroom](https://classroom.google.com/) la liga a su cuenta de `git` antes de que cierre la asignación.
 
