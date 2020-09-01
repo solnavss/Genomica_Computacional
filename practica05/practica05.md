@@ -2,7 +2,7 @@
 Juan A. Arias Del Ángel y Marisol Navarro Miranda
 ## Licenciatura en Ciencias de la Computación, Facultad de Ciencias - UNAM 
 
-**Indicaciones:** La práctica esta compuesta de cuatro partes con ejercicios para repasar los temas vistos en clase. La práctica se deberán resolver de manera **individual**. Es responsabilidad del alumno subir el directorio correspondiente con el archivo `.md` a su cuenta de [git](https://github.com/) y corroborar que se encuentre toda la información que se le pidió. Así mismo, tendrán que enviar vía [Google Classroom](https://classroom.google.com/) la liga a su cuenta de `git` antes de que cierre la asignación.
+**Indicaciones:** La práctica esta compuesta de cuatro partes con ejercicios para repasar los temas vistos en clase. La práctica se deberán resolver **en quipos**. Es responsabilidad de los alumnos subir el directorio correspondiente con el archivo `.md` a su cuenta de [git](https://github.com/) y corroborar que se encuentre toda la información que se le pidió. Así mismo, tendrán que enviar vía [Google Classroom](https://classroom.google.com/) la liga a su cuenta de `git` antes de que cierre la asignación.
 
 ***
 
