@@ -2,7 +2,7 @@
 Juan A. Arias Del Angel y Marisol Navarro Miranda
 ## Licenciatura en Ciencias de la Computación, Facultad de Ciencias - UNAM 
 
-**Indicaciones:** La práctica esta compuesta de cuatro partes con ejercicios para repasar los temas vistos en clase. La práctica se deberán resolver de manera **individual**. Es responsabilidad del alumno subir el directorio correspondiente a la práctica a su cuenta de [git](https://github.com/) y corroborar que se encuentre toda la información que se le pidió. Así mismo, tendrán que enviar vía [Google Classroom](https://classroom.google.com/) la liga a su cuenta de `git` antes de que cierre la asignación.
+**Indicaciones:** La práctica esta compuesta de cuatro partes con ejercicios para repasar los temas vistos en clase. La práctica se deberán resolver de manera **individual**. Es responsabilidad del alumno subir el directorio correspondiente con el archivo `.md` a su cuenta de [git](https://github.com/) y corroborar que se encuentre toda la información que se le pidió. Así mismo, tendrán que enviar vía [Google Classroom](https://classroom.google.com/) la liga a su cuenta de `git` antes de que cierre la asignación.
 
 ***
 
@@ -35,7 +35,7 @@ El archivo `pregunta2.fasta` contiene las secuencias de la proteína citocromo 
 5.	Según el reporte generado por IQ-TREE, ¿cuál es el modelo utilizado para inferir la filogenia? 
 6.	Según la filogenia obtenida, los organismos incluídos en este análisis se agrupan de acuerdo a la clasificación de la pregunta 2. 
 7.	¿Cuál es el organismo o los organismos más cercanamente relacionado al humano? ¿Cuál es el nombre común de este o estos organismos? 
-8.	¿Cuál dirías que es el linaje más basal dentro del grupo de los primates? 
+8.	¿Cuál dirías que es el linaje más basal dentro del grupo de los primates? Puedes consultar el siguiente artículo: [Which side of the tree is more basal?](https://www.researchgate.net/profile/Frank-Thorsten_Krell/publication/248845379_Which_side_of_the_tree_is_more_basal_Editorial/links/59f1c977458515bfd07fe451/Which-side-of-the-tree-is-more-basal-Editorial.pdf)
 
 ## Parte III. __ / 20
 
