@@ -53,4 +53,4 @@ Previo a la inferencia filogenética utilizando secuencias moleculares, los car
 
 5. *Hipótesis de selección con base en secuencias de nucleótidos.* 
 
-Utilizando el alineamiento de las secuencias de nucleótidos de la pregunta 3, así como la función kaks del paquete seqinr en R. ¿Se podría decir que el gen considerado se encuentra sujeto a selección positiva, selección purificadora o evolución neutral?
+Utilizando el alineamiento de las secuencias de nucleótidos de la `pregunta_3nt.fasta`, así como la función kaks del paquete seqinr en R. ¿Se podría decir que el gen considerado se encuentra sujeto a selección positiva, selección purificadora o evolución neutral?
