@@ -22,19 +22,19 @@ Consistirán en resolver un conjunto de prácticas computacionales que nosotros 
 
 Día | Mes | Actividad
 --- | --- | ---
-Miércoles 30 | septiembre | Práctica 1. Manejo de datos de secuenciación masiva (Bash) - sesión sincrónica
-Miércoles 07 | octubre | Establecer ambiente de trabajo
-Miércoles 14 | octubre | Práctica 1. Manejo de datos de secuenciación masiva (Bash) - sesión sincrónica
-Miércoles 21 | octubre | Entrega Práctica 1
-Miércoles 28 | octubre | Práctica 2. Herramientas bioinformáticas (Python) - sesión sincrónica
-Miércoles 04 | noviembre | Entrega Práctica 2.1
-Miércoles 11 | noviembre | Práctica 2. Herramientas bioinformáticas (Python) - sesión sincrónica
-Miércoles 18 | noviembre | Entrega Práctica 2.2
-Miércoles 25 | noviembre | Práctica 3. Análisis de datos genómicos, Parte I: Calidad - sesión sincrónica
-Miércoles 02 | noviembre | Entrega Práctica 3
-Miércoles 09 | diciembre | Práctica 4. Análisis de datos genómicos, Parte II: Mapeo y Ensamble - sesión sincrónica
-Miércoles 06 | enero | Entrega Práctica 4
-Miércoles 13 | enero | Práctica 5. Análisis de datos genómicos, Parte III: Filogenómica - sesión sincrónica
-Miércoles 20 | enero | Entrega Práctica 5
+Mié 30 | septiembre | Práctica 1. Manejo de datos de secuenciación masiva (Bash) - sesión sincrónica
+Mié 07 | octubre | Establecer ambiente de trabajo
+Mié 14 | octubre | Práctica 1. Manejo de datos de secuenciación masiva (Bash) - sesión sincrónica
+Mié 21 | octubre | Entrega Práctica 1
+Mié 28 | octubre | Práctica 2. Herramientas bioinformáticas (Python) - sesión sincrónica
+Mié 04 | noviembre | Entrega Práctica 2.1
+Mié 11 | noviembre | Práctica 2. Herramientas bioinformáticas (Python) - sesión sincrónica
+Mié 18 | noviembre | Entrega Práctica 2.2
+Mié 25 | noviembre | Práctica 3. Análisis de datos genómicos, Parte I: Calidad - sesión sincrónica
+Mié 02 | noviembre | Entrega Práctica 3
+Mié 09 | diciembre | Práctica 4. Análisis de datos genómicos, Parte II: Mapeo y Ensamble - sesión sincrónica
+Mié 06 | enero | Entrega Práctica 4
+Mié 13 | enero | Práctica 5. Análisis de datos genómicos, Parte III: Filogenómica - sesión sincrónica
+Mié 20 | enero | Entrega Práctica 5
 
 Saludos, Profesores de la clase de Genómica Computacional 2021-1.
