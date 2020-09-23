@@ -27,7 +27,7 @@ Mié 07 | octubre | Establecer ambiente de trabajo
 Mié 14 | octubre | Práctica 1. Manejo de datos de secuenciación masiva (Bash) - sesión sincrónica
 Mié 21 | octubre | Entrega Práctica 1
 Mié 28 | octubre | Práctica 2. Herramientas bioinformáticas (Python) - sesión sincrónica
-Mié04 | noviembre | Entrega Práctica 2.1
+Mié 04 | noviembre | Entrega Práctica 2.1
 Mié 11 | noviembre | Práctica 2. Herramientas bioinformáticas (Python) - sesión sincrónica
 Mié 18 | noviembre | Entrega Práctica 2.2
 Mié 25 | noviembre | Práctica 3. Análisis de datos genómicos, Parte I: Calidad - sesión sincrónica
