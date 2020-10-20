@@ -143,23 +143,22 @@ QDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVN
 
 import numpy as np
 import matplotlib.pyplot as plt
- 
+from textwrap import wrap
+
 # Crea el dataset con << tus datos obtenidos en barplot_data.txt >>
-
 frecuencias = [3, 12, 5, 18, 45]
-categorias = ('A', 'B', 'C', 'D', 'E')
+categorias = ['Categoría A', 'Categoría B', 'Categoría C', 'Categoría D', 'Categoría E']
+categorias = [ '\n'.join(wrap(l, 11)) for l in categorias]
+
 y_pos = np.arange(len(categorias))
- 
+
 # Gráfico de barras
-
 plt.bar(y_pos, frecuencias)
- 
-# Nombres en el eje-x
 
+# Nombres en el eje-x
 plt.xticks(y_pos, categorias)
- 
+
 # Mostrar la gráfica
 plt.show()
-```     
-
+```
 ## Fin de la práctica :)
