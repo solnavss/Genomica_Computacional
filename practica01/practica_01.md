@@ -74,21 +74,21 @@ En esta parte, trabajarás con secuencias genómicas del virus SARS-CoV-2 que pr
 
 Entra al vínuclo del [National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov/) (NCBI). Sigue los pasos para obtener los archivos:`sequence.fasta` y `sequence.gff3`. Renombrar los archivos usando el comando adecuado `sequence.fasta` -> `sarscov2_genome.fasta` y `sequence.gff3` ->  `sarscov2_genome.gff3`.
 
-![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_01.jpg)
+![alt text](https://github.com/solouli/Genomica_Computacional/blob/master/practica01/ncbi_01.png)
 
-![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_02.jpg)
+![alt text](https://github.com/solouli/Genomica_Computacional/blob/master/practica01/ncbi_02.png)
 
-![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_03.jpg)
+![alt text](https://github.com/solouli/Genomica_Computacional/blob/master/practica01/ncbi_03.png)
 
 Vuelve a entrar al vínuclo del [National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov/) (NCBI). Sigue los pasos para obtener uno por uno los archivos en formato FASTA correspondientes a Chain C, SARS-CoV-2 spike glycoprotein, Chain B, SARS-CoV-2 spike glycoprotein y Chain A, SARS-CoV-2 spike glycoprotein: `sequence.fasta`, `sequence (1).fasta` y `sequence (2).fasta`. Renombrar los archivos usando el comando adecuado `sequence.fasta` -> `splike_c.faa`, `sequence (1).fasta` -> `splike_b.faa` y `sequence (2).fasta` -> `splike_a.faa`. 
 
 Además para esta parte, es necesario que crees en tu directorio `/meta` un archivo `SarsCov-2_Spike.txt` donde describas a grandes rasgos cuál es la función de la [SARS-CoV-2 spike ectodomain structure](https://www.annualreviews.org/doi/abs/10.1146/annurev-virology-110615-042301).
 
-![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_04.jpg)
+![alt text](https://github.com/solouli/Genomica_Computacional/blob/master/practica01/ncbi_04.png)
 
-![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_05.jpg)
+![alt text](https://github.com/solouli/Genomica_Computacional/blob/master/practica01/ncbi_05.png)
 
-![alt text](https://github.com/solouli/genomica_2020-2/blob/master/practica/practica_01/ncbi_06.jpg)
+![alt text](https://github.com/solouli/Genomica_Computacional/blob/master/practica01/ncbi_06.png)
 
 ***
 
