@@ -9,7 +9,7 @@
 
 Inicia la terminal y colócate en el directorio `computadora@usuario:~/home/` o `computadora@usuario:~/Desktop/`. Crea un directorio llamado `GenomicaComputacional` (sin tilde) y dentro de él crea un nuevo directorio como se indica a continuación (minúsculas): `inicialdelnombre+apellido_p01`. **Ejemplo:** Marisol Navarro -> `mnavarro_p01`. 
 
-Crea el archivo `comandos_p01.md` dentro del directorio con tu inicial y apellido. Recuerda que debe contener los comandos, líneas de código y/o outputs que se piden para resolver cada ejercicio en [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). El archivo deberá seguir el siguiente formato: 
+Crea el archivo `comandos_p01.md` dentro del directorio con tu inicial y apellido. Recuerda que debe contener los comandos, líneas de código y/o outputs que se piden para resolver cada ejercicio en [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) (también pueden consultar este enlace de [markdown avanzado](https://github.com/DavidWells/advanced-markdown/blob/master/README.md)). El archivo deberá seguir el siguiente formato: 
 
 ```
 # Comandos de la Práctica 01
