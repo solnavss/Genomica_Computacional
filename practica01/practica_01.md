@@ -1,4 +1,4 @@
-# Genómica Computacional, 
+# Genómica Computacional
 ## Práctica 01 - Manejo de datos de secuenciación masiva (Bash)
 
 **Indicaciones:** La práctica esta compuesta de cuatro partes con ejercicios para repasar los comandos de Bash que se vieron en clase, también el manejo de secuencias y algunos formatos particulares (`.fna`/`.fasta`, `.faa`,`.gff3` y `.fastq`). Deberán resolver de manera **individual** los ejercicios y anotar los comandos, líneas de código y/o outputs que se piden en un archivo llamado `comandos_p01.txt` utilizando cualquier editor de texto plano (`emacs`, `sublime text`, `atom`, `vi`, `vim`, `nano`, `bloc de notas`, `notepad++`, etc).
@@ -9,7 +9,7 @@
 
 Inicia la terminal y colócate en el directorio `computadora@usuario:~/home/` o `computadora@usuario:~/Desktop/`. Crea un directorio llamado `GenomicaComputacional` (sin tilde) y dentro de él crea un nuevo directorio como se indica a continuación (minúsculas): `inicialdelnombre+apellido_p01`. **Ejemplo:** Marisol Navarro -> `mnavarro_p01`. 
 
-Crea el archivo `comandos_p01.md` dentro del directorio con tu inicial y apellido. Recuerda que debe contener los comandos, líneas de código y/o outputs que se piden para resolver cada ejercicio en [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). El archivo deberá seguir el siguiente formato: 
+Crea el archivo `comandos_p01.md` dentro del directorio con tu inicial y apellido. Recuerda que debe contener los comandos, líneas de código y/o outputs que se piden para resolver cada ejercicio en [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) (también pueden consultar este enlace de [markdown avanzado](https://github.com/DavidWells/advanced-markdown/blob/master/README.md)). El archivo deberá seguir el siguiente formato: 
 
 ```
 # Comandos de la Práctica 01
@@ -116,7 +116,6 @@ QDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVN
 MGILPSPGMPALLSLVSLLSVLLMGCVAETGTQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHST
 QDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVN
 ... (resto de la proteína)
-
 ```
 
 05. Mueve lo archivos `data/raw_data/splike_*.faa` al directorio `archive/`. ¿Qué pasó con las ligas simbólicas suaves?. 
@@ -143,23 +142,22 @@ QDLFLPFFSNVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVN
 
 import numpy as np
 import matplotlib.pyplot as plt
- 
+from textwrap import wrap
+
 # Crea el dataset con << tus datos obtenidos en barplot_data.txt >>
-
 frecuencias = [3, 12, 5, 18, 45]
-categorias = ('A', 'B', 'C', 'D', 'E')
+categorias = ['Categoría A', 'Categoría B', 'Categoría C', 'Categoría D', 'Categoría E']
+categorias = [ '\n'.join(wrap(l, 11)) for l in categorias]
+
 y_pos = np.arange(len(categorias))
- 
+
 # Gráfico de barras
-
 plt.bar(y_pos, frecuencias)
- 
-# Nombres en el eje-x
 
+# Nombres en el eje-x
 plt.xticks(y_pos, categorias)
- 
+
 # Mostrar la gráfica
 plt.show()
-```     
-
+```
 ## Fin de la práctica :)
