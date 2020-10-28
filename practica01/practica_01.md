@@ -1,4 +1,4 @@
-# Genómica Computacional, 
+# Genómica Computacional
 ## Práctica 01 - Manejo de datos de secuenciación masiva (Bash)
 
 **Indicaciones:** La práctica esta compuesta de cuatro partes con ejercicios para repasar los comandos de Bash que se vieron en clase, también el manejo de secuencias y algunos formatos particulares (`.fna`/`.fasta`, `.faa`,`.gff3` y `.fastq`). Deberán resolver de manera **individual** los ejercicios y anotar los comandos, líneas de código y/o outputs que se piden en un archivo llamado `comandos_p01.txt` utilizando cualquier editor de texto plano (`emacs`, `sublime text`, `atom`, `vi`, `vim`, `nano`, `bloc de notas`, `notepad++`, etc).
