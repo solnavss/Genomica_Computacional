@@ -176,7 +176,7 @@ fastqc file_1.fastq file_2.fastq
 *La longitud de lecturas es aquella obtenida en la PII.03*
 *El tamaño del genoma (bp) debe ser el reportado para la especie*
 
-## Parte VI. __ / 20
+## Parte IV. __ / 20
 
 **Herramientas de limpieza**
 
