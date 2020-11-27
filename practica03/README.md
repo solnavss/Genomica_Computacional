@@ -23,19 +23,7 @@ También deberá crear el archivo `comandos_p02.md` en el cual colaborarán **to
 
 **Respuesta 1:**
 
-/bin/bash 
-
-**Respuesta 2:**
-
-[comando] [opciones] [argumentos]
-
-**Respuesta 3:**
-
-[comando] [opciones] [argumentos]
-
-**Respuesta 4:**
-
-La organización...
+Tabla
 
 # Parte II.
 ...
