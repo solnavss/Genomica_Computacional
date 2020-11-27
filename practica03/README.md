@@ -29,7 +29,7 @@ Tabla
 ...
 ```
 
-**Objetivo:** En esta práctica se espera que los alumnos revisen los flujos de datos posibles desde la salida del secuenciador y cómo se realiza el análisis primario.
+**Objetivo:** En esta práctica se espera que los alumnos conozcan los flujos de datos posibles desde la salida del secuenciador y el análisis primario.
 
 **Flujo de datos de Secuenciación Masiva**
 
