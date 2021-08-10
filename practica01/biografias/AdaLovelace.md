@@ -5,7 +5,7 @@ Augusta Ada King, condesa de Lovelace, fue una matemática y escritora británic
 
 
 <p align="center">
-  <img src="" alt="aLovelace"/>
+  <img src="https://github.com/KarlaDSJ/Genomica_Computacional/blob/master/practica01/biografias/img_aLovelace.jpg" alt="aLovelace"/>
 </p>
 
 **Principales aportaciones:**
@@ -17,7 +17,7 @@ Augusta Ada King, condesa de Lovelace, fue una matemática y escritora británic
 * Introdujo una notación para escribir programas, principalmente basada en el dominio que Ada tenía sobre el texto de Luigi Menabrea de 1842 (que comentó personalmente completándolo con anotaciones que son más extensas que el texto mismo) sobre el funcionamiento del telar de Jacquard
 
 <p align="center">
-  <img src="" alt="aLovelacePrograma"/>
+  <img src="https://github.com/KarlaDSJ/Genomica_Computacional/blob/master/practica01/biografias/img_aLovelace_2.png" alt="aLovelacePrograma"/>
 </p>
 
 **Referencias:**
