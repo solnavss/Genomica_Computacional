@@ -1,5 +1,4 @@
 # Janet Thornton
--
 
 ![img_mdayfoff](https://user-images.githubusercontent.com/80611832/128771778-880a82c1-6594-4ffd-b24a-02d764b9f503.png)
 
