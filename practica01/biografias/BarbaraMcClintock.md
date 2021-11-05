@@ -1,7 +1,7 @@
 # Barbara Mc Clintock
 <center>
 
-  ![Barbara Mc Clintock](./BarbaraMcClintock.jpeg) 
+  ![Barbara Mc Clintock](./BarbaraMcClintock.jpg) 
 
 </center>
 
