@@ -37,3 +37,11 @@ Kay McNulty falleció el 20 de abril de 2006 en Wyndmoor (Pennsylvania).
  2. S. (2017, 15 noviembre). Ireland’s Greatest Woman Inventor finalist - Kay McNulty Mauchly Antonelli, first woman computer programmer - Innovation | siliconrepublic.com - Ireland’s Technology News Service. Silicon Republic. Recuperado 5 de noviembre de 2021, de https://www.siliconrepublic.com/innovation/irelands-greatest-woman-inventor-finalist-kay-mcnulty-mauchly-antonelli-first-woman-computer-programmer
  3. Stadler, M. M. (2017, 12 octubre). Kathleen R. McNulty (1921–2006). La primera “computer” que quedó obsoleta. Mujeres con ciencia. Recuperado 5 de noviembre de 2021, de https://mujeresconciencia.com/2017/10/12/kathleen-r-mcnulty-1921-2006-la-primera-computer-quedo-obsoleta/
  4. Stadler, M. M. (2015, 12 febrero). Kathleen McNulty Mauchly Antonelli, programadora. Mujeres con ciencia. Recuperado 5 de noviembre de 2021, de https://mujeresconciencia.com/2015/02/12/kathleen-mcnulty-mauchly-antonelli-programadora/
+
+
+### Datos:
+Alumno: Joanna Lizeth Sánchez Rangel
+Número de cuenta: 315060982
+Semestre 2022-1
+05 de Noviembre de 2021
+
