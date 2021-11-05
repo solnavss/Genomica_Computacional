@@ -71,7 +71,7 @@ cruce y recombinación genética.
 
 * The dynamic genome. Fedoroff N, Botstein D. Plainview, N.Y.: Cold Spring Harbor Laboratory Press; 1992.
 
-##Bibliografía
+## Bibliografía
 * García, B. A., Jordán, M. P., Buleo, M. M., Guillot, M. F., Prosseda, L., & Dasí, B. S. (2020). ELEMENTOS GÉNICOS MÓVILES. 
 Universidad Católica De Valencia, 8. https://riucv.ucv.es/bitstream/handle/20.500.12466/273/IMP_02.UCV_RevCiencia_Barbara.pdf?
 sequence=1&isAllowed=y
